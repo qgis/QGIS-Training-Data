@@ -1,6 +1,8 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.14.1-Essen">
+<qgis projectname="" version="2.16.3">
   <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="accflow20130721085906002" name="accflow">
@@ -65,11 +67,14 @@
   </legend>
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>266421.52572500001406297</xmin>
+        <ymin>4458000</ymin>
+        <xmax>270696.52572500001406297</xmax>
+        <ymax>4464100</ymax>
+      </extent>
       <id>accflow20130721085906002</id>
       <datasource>./accflow.tif</datasource>
-      <shortname></shortname>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -97,15 +102,15 @@
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" classificationMax="1.40862e+07" classificationMinMaxOrigin="MinMaxFullExtentEstimated" band="1" classificationMin="625" type="singlebandpseudocolor">
+        <rasterrenderer opacity="1" alphaBand="-1" classificationMax="14086200" classificationMinMaxOrigin="MinMaxFullExtentEstimated" band="1" classificationMin="625" type="singlebandpseudocolor">
           <rasterTransparency/>
           <rastershader>
             <colorrampshader colorRampType="INTERPOLATED" clip="0">
               <item alpha="255" value="625" label="625.000000" color="#ca0020"/>
               <item alpha="255" value="2500" label="3522018.750000" color="#f4a582"/>
               <item alpha="255" value="50000" label="7043412.500000" color="#f7f7f7"/>
-              <item alpha="255" value="1e+06" label="10564806.250000" color="#92c5de"/>
-              <item alpha="255" value="1.40862e+07" label="14086200.000000" color="#0571b0"/>
+              <item alpha="255" value="1000000" label="10564806.250000" color="#92c5de"/>
+              <item alpha="255" value="14086200" label="14086200.000000" color="#0571b0"/>
             </colorrampshader>
           </rastershader>
         </rasterrenderer>
@@ -116,11 +121,14 @@
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>262846.52572500001406297</xmin>
+        <ymin>4454025</ymin>
+        <xmax>277871.52572500001406297</xmax>
+        <ymax>4464275</ymax>
+      </extent>
       <id>dem2520130721085906257</id>
       <datasource>./dem25.tif</datasource>
-      <shortname></shortname>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -171,11 +179,14 @@
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>262846.52572500001406297</xmin>
+        <ymin>4454025</ymin>
+        <xmax>277871.52572500001406297</xmax>
+        <ymax>4464275</ymax>
+      </extent>
       <id>slope_tif20130721085950674</id>
       <datasource>./slope.tif</datasource>
-      <shortname></shortname>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
