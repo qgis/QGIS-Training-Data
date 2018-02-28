@@ -18,16 +18,16 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer id="airports20160924201425088" checked="Qt::Checked" providerKey="spatialite" name="airports" source="dbname='/home/web/projects/naturalearth.sqlite' table=&quot;airports&quot; (geom) sql=" expanded="1">
+    <layer-tree-layer id="airports20160924201425088" checked="Qt::Checked" providerKey="spatialite" name="airports" source="dbname='./naturalearth.sqlite' table=&quot;airports&quot; (geom) sql=" expanded="1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer id="places20160903164057641" checked="Qt::Unchecked" providerKey="spatialite" name="places" source="dbname='/home/web/projects/naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" expanded="1">
+    <layer-tree-layer id="places20160903164057641" checked="Qt::Unchecked" providerKey="spatialite" name="places" source="dbname='./naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" expanded="1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer id="countries20160903162230262" checked="Qt::Checked" providerKey="spatialite" name="countries" source="dbname='/home/web/projects/naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" expanded="0">
+    <layer-tree-layer id="countries20160903162230262" checked="Qt::Checked" providerKey="spatialite" name="countries" source="dbname='./naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" expanded="0">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer id="countries20160910105437623" checked="Qt::Checked" providerKey="spatialite" name="countries_shapeburst" source="dbname='/home/web/projects/naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" expanded="1">
+    <layer-tree-layer id="countries20160910105437623" checked="Qt::Checked" providerKey="spatialite" name="countries_shapeburst" source="dbname='./naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" expanded="1">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -10450,7 +10450,7 @@ def my_form_open(dialog, layer, feature):
         </styles>
         <layer-tree-group>
           <customproperties/>
-          <layer-tree-layer id="places20160903164057641" checked="Qt::Unchecked" providerKey="spatialite" name="places" source="dbname='/home/web/projects/naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" expanded="1">
+          <layer-tree-layer id="places20160903164057641" checked="Qt::Unchecked" providerKey="spatialite" name="places" source="dbname='./naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" expanded="1">
             <customproperties/>
           </layer-tree-layer>
           <custom-order enabled="0"/>
