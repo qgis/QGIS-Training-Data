@@ -1,0 +1,3 @@
+COMMAND: v.in.ogr -o input="/home/matteo/lavori/miei/grant_tm/QGIS-Training-Data/training_manual_data/shapefiles/rivers.shp" output="g_rivers" min_area=0.0001 type="" snap=-1
+GISDBASE: /home/matteo/lavori/miei/grant_tm/QGIS-Training-Data/training_manual_data/grass/grassdata
+LOCATION: SouthAfrica MAPSET: grass_mapset USER: matteo DATE: Fri Aug  3 17:25:56 2018
