@@ -1,0 +1,5 @@
+0 thru 45 = 1 North
+315 thru 360 = 1 North
+45 thru 135 = 2 East
+135 thru 225 = 3 South
+225 thru 315 = 4 West
