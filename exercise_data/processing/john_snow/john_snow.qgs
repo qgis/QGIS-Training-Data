@@ -1,22 +1,48 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.16.3">
+<qgis projectname="" version="3.10.4-A Coruña">
+  <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["OSGB 1936 / British National Grid",BASEGEOGCRS["OSGB 1936",DATUM["OSGB 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["UK - Britain and UKCS 49°46'N to 61°01'N, 7°33'W to 3°33'E"],BBOX[49.75,-9.2,61.14,2.88]],ID["EPSG",27700]]</wkt>
+      <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
+      <srsid>2437</srsid>
+      <srid>27700</srid>
+      <authid>EPSG:27700</authid>
+      <description>OSGB 1936 / British National Grid</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Pumps20130804123454093" name="Pumps">
+    <layer-tree-layer providerKey="ogr" name="Pumps" expanded="1" source="./Pumps.shp" id="Pumps20130804123454093" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Cholera_Deaths20130804123454077" name="Cholera_Deaths">
+    <layer-tree-layer providerKey="ogr" name="Cholera_Deaths" expanded="1" source="./Cholera_Deaths.shp" id="Cholera_Deaths20130804123454077" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="osmgrey20130804123500101" name="osmgrey">
+    <layer-tree-layer providerKey="gdal" name="osmgrey" expanded="0" source="./osmgrey.tif" id="osmgrey20130804123500101" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>Pumps20130804123454093</item>
+      <item>Cholera_Deaths20130804123454077</item>
+      <item>osmgrey20130804123500101</item>
+    </custom-order>
   </layer-tree-group>
+  <snapping-settings enabled="1" type="1" mode="3" intersection-snapping="0" unit="2" tolerance="0">
+    <individual-layer-settings>
+      <layer-setting enabled="1" type="1" id="Pumps20130804123454093" units="1" tolerance="10"/>
+      <layer-setting enabled="1" type="1" id="Cholera_Deaths20130804123454077" units="1" tolerance="10"/>
+    </individual-layer-settings>
+  </snapping-settings>
   <relations/>
-  <mapcanvas>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
       <xmin>528735.77500000002328306</xmin>
@@ -25,52 +51,137 @@
       <ymax>181545.32499999908031896</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>0</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+        <wkt>PROJCRS["OSGB 1936 / British National Grid",BASEGEOGCRS["OSGB 1936",DATUM["OSGB 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["UK - Britain and UKCS 49°46'N to 61°01'N, 7°33'W to 3°33'E"],BBOX[49.75,-9.2,61.14,2.88]],ID["EPSG",27700]]</wkt>
+        <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
         <srsid>2437</srsid>
         <srid>27700</srid>
         <authid>EPSG:27700</authid>
         <description>OSGB 1936 / British National Grid</description>
         <projectionacronym>tmerc</projectionacronym>
-        <ellipsoidacronym>airy</ellipsoidacronym>
+        <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:27700" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="Pumps20130804123454093"/>
-      <layer_coordinate_transform destAuthId="EPSG:27700" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cholera_Deaths20130804123454077"/>
-      <layer_coordinate_transform destAuthId="EPSG:27700" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="osmgrey20130804123500101"/>
-    </layer_coordinate_transform_info>
+    <expressionContextScope/>
   </mapcanvas>
-  <layer-tree-canvas>
-    <custom-order enabled="0">
-      <item>Pumps20130804123454093</item>
-      <item>Cholera_Deaths20130804123454077</item>
-      <item>osmgrey20130804123500101</item>
-    </custom-order>
-  </layer-tree-canvas>
+  <DataPlotly>
+    <Option type="Map">
+      <Option name="dynamic_properties" type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+      <Option name="plot_layout" type="Map">
+        <Option name="additional_info_expression" type="QString" value=""/>
+        <Option name="bar_mode" type="QString" value="group"/>
+        <Option name="bargaps" type="double" value="0"/>
+        <Option name="bins_check" type="bool" value="false"/>
+        <Option name="legend" type="bool" value="true"/>
+        <Option name="legend_orientation" type="QString" value="v"/>
+        <Option name="legend_title" type="invalid"/>
+        <Option name="polar" type="Map">
+          <Option name="angularaxis" type="Map">
+            <Option name="direction" type="QString" value="clockwise"/>
+          </Option>
+        </Option>
+        <Option name="range_slider" type="Map">
+          <Option name="borderwidth" type="int" value="1"/>
+          <Option name="visible" type="bool" value="false"/>
+        </Option>
+        <Option name="title" type="QString" value=""/>
+        <Option name="x_inv" type="invalid"/>
+        <Option name="x_max" type="invalid"/>
+        <Option name="x_min" type="invalid"/>
+        <Option name="x_title" type="QString" value=""/>
+        <Option name="x_type" type="QString" value="linear"/>
+        <Option name="xaxis" type="invalid"/>
+        <Option name="y_inv" type="invalid"/>
+        <Option name="y_max" type="invalid"/>
+        <Option name="y_min" type="invalid"/>
+        <Option name="y_title" type="QString" value=""/>
+        <Option name="y_type" type="QString" value="linear"/>
+        <Option name="z_title" type="QString" value=""/>
+      </Option>
+      <Option name="plot_properties" type="Map">
+        <Option name="additional_hover_text" type="invalid"/>
+        <Option name="bins" type="int" value="10"/>
+        <Option name="box_orientation" type="QString" value="v"/>
+        <Option name="box_outliers" type="bool" value="false"/>
+        <Option name="box_stat" type="bool" value="false"/>
+        <Option name="color_scale" type="QString" value="Greys"/>
+        <Option name="color_scale_data_defined_in_check" type="bool" value="false"/>
+        <Option name="color_scale_data_defined_in_invert_check" type="bool" value="false"/>
+        <Option name="cont_type" type="QString" value="fill"/>
+        <Option name="contour_type_combo" type="QString" value="Riempimento"/>
+        <Option name="cumulative" type="bool" value="false"/>
+        <Option name="custom" type="List">
+          <Option type="QString" value=""/>
+        </Option>
+        <Option name="hover_label_position" type="QString" value="auto"/>
+        <Option name="hover_label_text" type="invalid"/>
+        <Option name="hover_text" type="QString" value="all"/>
+        <Option name="in_color" type="QString" value="#8ebad9"/>
+        <Option name="invert_color_scale" type="bool" value="false"/>
+        <Option name="invert_hist" type="QString" value="increasing"/>
+        <Option name="line_combo" type="QString" value="Linea continua"/>
+        <Option name="line_dash" type="QString" value="solid"/>
+        <Option name="marker" type="QString" value="markers"/>
+        <Option name="marker_size" type="double" value="10"/>
+        <Option name="marker_symbol" type="int" value="0"/>
+        <Option name="marker_type_combo" type="QString" value="Punti"/>
+        <Option name="marker_width" type="double" value="1"/>
+        <Option name="name" type="QString" value=""/>
+        <Option name="normalization" type="QString" value=""/>
+        <Option name="opacity" type="double" value="1"/>
+        <Option name="out_color" type="QString" value="#1f77b4"/>
+        <Option name="point_combo" type="QString" value=""/>
+        <Option name="selected_features_only" type="bool" value="false"/>
+        <Option name="show_colorscale_legend" type="bool" value="false"/>
+        <Option name="show_lines" type="bool" value="true"/>
+        <Option name="show_lines_check" type="bool" value="true"/>
+        <Option name="show_mean_line" type="bool" value="true"/>
+        <Option name="violin_box" type="bool" value="true"/>
+        <Option name="violin_side" type="QString" value="both"/>
+        <Option name="visible_features_only" type="bool" value="false"/>
+        <Option name="x_name" type="QString" value=""/>
+        <Option name="y_name" type="QString" value=""/>
+        <Option name="z_name" type="QString" value=""/>
+      </Option>
+      <Option name="plot_type" type="QString" value="scatter"/>
+      <Option name="source_layer_id" type="QString" value="Cholera_Deaths20130804123454077"/>
+    </Option>
+  </DataPlotly>
+  <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Pumps" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" name="Pumps" showFeatureCount="0" checked="Qt::Checked">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Pumps20130804123454093" visible="1"/>
+        <legendlayerfile isInOverview="0" visible="1" layerid="Pumps20130804123454093"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Cholera_Deaths" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" name="Cholera_Deaths" showFeatureCount="0" checked="Qt::Checked">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Cholera_Deaths20130804123454077" visible="1"/>
+        <legendlayerfile isInOverview="0" visible="1" layerid="Cholera_Deaths20130804123454077"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="osmgrey" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" name="osmgrey" showFeatureCount="0" checked="Qt::Checked">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osmgrey20130804123500101" visible="1"/>
+        <legendlayerfile isInOverview="0" visible="1" layerid="osmgrey20130804123500101"/>
       </filegroup>
     </legendlayer>
   </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
   <projectlayers>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyDrawingHints="0" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="1e+08" labelsEnabled="1" type="vector" simplifyAlgorithm="0" wkbType="Point" simplifyMaxScale="1" refreshOnNotifyMessage="" maxScale="0" readOnly="0" geometry="Point" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>529160.33737946709152311</xmin>
+        <ymin>180857.94873570353956893</ymin>
+        <xmax>529655.88938094605691731</xmax>
+        <ymax>181306.21327731251949444</ymax>
+      </extent>
       <id>Cholera_Deaths20130804123454077</id>
       <datasource>./Cholera_Deaths.shp</datasource>
       <keywordList>
@@ -79,250 +190,170 @@
       <layername>Cholera_Deaths</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+          <wkt>PROJCRS["OSGB 1936 / British National Grid",BASEGEOGCRS["OSGB 1936",DATUM["OSGB 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["UK - Britain and UKCS 49°46'N to 61°01'N, 7°33'W to 3°33'E"],BBOX[49.75,-9.2,61.14,2.88]],ID["EPSG",27700]]</wkt>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
           <srsid>2437</srsid>
           <srid>27700</srid>
           <authid>EPSG:27700</authid>
           <description>OSGB 1936 / British National Grid</description>
           <projectionacronym>tmerc</projectionacronym>
-          <ellipsoidacronym>airy</ellipsoidacronym>
+          <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
-      <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
       <vectorjoins/>
       <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
       <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
       </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="ID">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="COUNT">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
+          <symbol name="0" type="marker" alpha="1" force_rhr="0" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties>
-        <property key="labeling" value="pal"/>
-        <property key="labeling/addDirectionSymbol" value="false"/>
-        <property key="labeling/angleOffset" value="0"/>
-        <property key="labeling/blendMode" value="0"/>
-        <property key="labeling/bufferBlendMode" value="0"/>
-        <property key="labeling/bufferColorA" value="255"/>
-        <property key="labeling/bufferColorB" value="255"/>
-        <property key="labeling/bufferColorG" value="255"/>
-        <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
-        <property key="labeling/bufferJoinStyle" value="64"/>
-        <property key="labeling/bufferNoFill" value="false"/>
-        <property key="labeling/bufferSize" value="1"/>
-        <property key="labeling/bufferSizeInMapUnits" value="false"/>
-        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/bufferTransp" value="0"/>
-        <property key="labeling/centroidInside" value="false"/>
-        <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/decimals" value="3"/>
-        <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
-        <property key="labeling/distMapUnitMaxScale" value="0"/>
-        <property key="labeling/distMapUnitMinScale" value="0"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value=""/>
-        <property key="labeling/fontBold" value="false"/>
-        <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
-        <property key="labeling/fontItalic" value="false"/>
-        <property key="labeling/fontLetterSpacing" value="0"/>
-        <property key="labeling/fontLimitPixelSize" value="false"/>
-        <property key="labeling/fontMaxPixelSize" value="10000"/>
-        <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="8.25"/>
-        <property key="labeling/fontSizeInMapUnits" value="false"/>
-        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/fontStrikeout" value="false"/>
-        <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
-        <property key="labeling/fontWordSpacing" value="0"/>
-        <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
-        <property key="labeling/labelOffsetInMapUnits" value="true"/>
-        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/labelPerPart" value="false"/>
-        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-        <property key="labeling/limitNumLabels" value="false"/>
-        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-        <property key="labeling/maxNumLabels" value="2000"/>
-        <property key="labeling/mergeLines" value="false"/>
-        <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="0"/>
-        <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
-        <property key="labeling/obstacle" value="true"/>
-        <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
-        <property key="labeling/placementFlags" value="0"/>
-        <property key="labeling/plussign" value="false"/>
-        <property key="labeling/preserveRotation" value="true"/>
-        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-        <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
-        <property key="labeling/reverseDirectionSymbol" value="false"/>
-        <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
-        <property key="labeling/shadowBlendMode" value="6"/>
-        <property key="labeling/shadowColorB" value="0"/>
-        <property key="labeling/shadowColorG" value="0"/>
-        <property key="labeling/shadowColorR" value="0"/>
-        <property key="labeling/shadowDraw" value="false"/>
-        <property key="labeling/shadowOffsetAngle" value="135"/>
-        <property key="labeling/shadowOffsetDist" value="1"/>
-        <property key="labeling/shadowOffsetGlobal" value="true"/>
-        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowOffsetUnits" value="1"/>
-        <property key="labeling/shadowRadius" value="1.5"/>
-        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowRadiusUnits" value="1"/>
-        <property key="labeling/shadowScale" value="100"/>
-        <property key="labeling/shadowTransparency" value="30"/>
-        <property key="labeling/shadowUnder" value="0"/>
-        <property key="labeling/shapeBlendMode" value="0"/>
-        <property key="labeling/shapeBorderColorA" value="255"/>
-        <property key="labeling/shapeBorderColorB" value="128"/>
-        <property key="labeling/shapeBorderColorG" value="128"/>
-        <property key="labeling/shapeBorderColorR" value="128"/>
-        <property key="labeling/shapeBorderWidth" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeBorderWidthUnits" value="1"/>
-        <property key="labeling/shapeDraw" value="false"/>
-        <property key="labeling/shapeFillColorA" value="255"/>
-        <property key="labeling/shapeFillColorB" value="255"/>
-        <property key="labeling/shapeFillColorG" value="255"/>
-        <property key="labeling/shapeFillColorR" value="255"/>
-        <property key="labeling/shapeJoinStyle" value="64"/>
-        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeOffsetUnits" value="1"/>
-        <property key="labeling/shapeOffsetX" value="0"/>
-        <property key="labeling/shapeOffsetY" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeRadiiUnits" value="1"/>
-        <property key="labeling/shapeRadiiX" value="0"/>
-        <property key="labeling/shapeRadiiY" value="0"/>
-        <property key="labeling/shapeRotation" value="0"/>
-        <property key="labeling/shapeRotationType" value="0"/>
-        <property key="labeling/shapeSVGFile" value=""/>
-        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeSizeType" value="0"/>
-        <property key="labeling/shapeSizeUnits" value="1"/>
-        <property key="labeling/shapeSizeX" value="0"/>
-        <property key="labeling/shapeSizeY" value="0"/>
-        <property key="labeling/shapeTransparency" value="0"/>
-        <property key="labeling/shapeType" value="0"/>
-        <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="0"/>
-        <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
-        <property key="labeling/upsidedownLabels" value="0"/>
-        <property key="labeling/wrapChar" value=""/>
-        <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
-      </customproperties>
+      <customproperties/>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>ID</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="MS Shell Dlg 2"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="ID">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COUNT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="ID" name=""/>
+        <alias index="1" field="COUNT" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="0"/>
+      <defaults>
+        <default field="ID" applyOnUpdate="0" expression=""/>
+        <default field="COUNT" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="ID" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+        <constraint field="COUNT" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="ID" desc="" exp=""/>
+        <constraint field="COUNT" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>.</editform>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1">.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
       <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
+      <previewExpression>"ID"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyDrawingHints="0" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="1e+08" labelsEnabled="1" type="vector" simplifyAlgorithm="0" wkbType="Point" simplifyMaxScale="1" refreshOnNotifyMessage="" maxScale="-4.65661e-10" readOnly="0" geometry="Point" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>529181.55799691914580762</xmin>
+        <ymin>180660.45474864006973803</ymin>
+        <xmax>529748.91108866757713258</xmax>
+        <ymax>181387.88454370037652552</ymax>
+      </extent>
       <id>Pumps20130804123454093</id>
       <datasource>./Pumps.shp</datasource>
       <keywordList>
@@ -331,247 +362,152 @@
       <layername>Pumps</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+          <wkt>PROJCRS["OSGB 1936 / British National Grid",BASEGEOGCRS["OSGB 1936",DATUM["OSGB 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["UK - Britain and UKCS 49°46'N to 61°01'N, 7°33'W to 3°33'E"],BBOX[49.75,-9.2,61.14,2.88]],ID["EPSG",27700]]</wkt>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
           <srsid>2437</srsid>
           <srid>27700</srid>
           <authid>EPSG:27700</authid>
           <description>OSGB 1936 / British National Grid</description>
           <projectionacronym>tmerc</projectionacronym>
-          <ellipsoidacronym>airy</ellipsoidacronym>
+          <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
-      <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
       <vectorjoins/>
       <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
       <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
       </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="Id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
+          <symbol name="0" type="marker" alpha="1" force_rhr="0" clip_to_extent="1">
+            <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
               <prop k="angle" v="0"/>
               <prop k="color" v="101,44,142,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties>
-        <property key="labeling" value="pal"/>
-        <property key="labeling/addDirectionSymbol" value="false"/>
-        <property key="labeling/angleOffset" value="0"/>
-        <property key="labeling/blendMode" value="0"/>
-        <property key="labeling/bufferBlendMode" value="0"/>
-        <property key="labeling/bufferColorA" value="255"/>
-        <property key="labeling/bufferColorB" value="255"/>
-        <property key="labeling/bufferColorG" value="255"/>
-        <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
-        <property key="labeling/bufferJoinStyle" value="64"/>
-        <property key="labeling/bufferNoFill" value="false"/>
-        <property key="labeling/bufferSize" value="1"/>
-        <property key="labeling/bufferSizeInMapUnits" value="false"/>
-        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/bufferTransp" value="0"/>
-        <property key="labeling/centroidInside" value="false"/>
-        <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/decimals" value="3"/>
-        <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
-        <property key="labeling/distMapUnitMaxScale" value="0"/>
-        <property key="labeling/distMapUnitMinScale" value="0"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value="Id"/>
-        <property key="labeling/fontBold" value="false"/>
-        <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
-        <property key="labeling/fontItalic" value="false"/>
-        <property key="labeling/fontLetterSpacing" value="0"/>
-        <property key="labeling/fontLimitPixelSize" value="false"/>
-        <property key="labeling/fontMaxPixelSize" value="10000"/>
-        <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="11"/>
-        <property key="labeling/fontSizeInMapUnits" value="false"/>
-        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/fontStrikeout" value="false"/>
-        <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
-        <property key="labeling/fontWordSpacing" value="0"/>
-        <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
-        <property key="labeling/labelOffsetInMapUnits" value="true"/>
-        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/labelPerPart" value="false"/>
-        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-        <property key="labeling/limitNumLabels" value="false"/>
-        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-        <property key="labeling/maxNumLabels" value="2000"/>
-        <property key="labeling/mergeLines" value="false"/>
-        <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="0"/>
-        <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
-        <property key="labeling/obstacle" value="true"/>
-        <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
-        <property key="labeling/placementFlags" value="0"/>
-        <property key="labeling/plussign" value="false"/>
-        <property key="labeling/preserveRotation" value="true"/>
-        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-        <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
-        <property key="labeling/reverseDirectionSymbol" value="false"/>
-        <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
-        <property key="labeling/shadowBlendMode" value="6"/>
-        <property key="labeling/shadowColorB" value="0"/>
-        <property key="labeling/shadowColorG" value="0"/>
-        <property key="labeling/shadowColorR" value="0"/>
-        <property key="labeling/shadowDraw" value="false"/>
-        <property key="labeling/shadowOffsetAngle" value="135"/>
-        <property key="labeling/shadowOffsetDist" value="1"/>
-        <property key="labeling/shadowOffsetGlobal" value="true"/>
-        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowOffsetUnits" value="1"/>
-        <property key="labeling/shadowRadius" value="1.5"/>
-        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowRadiusUnits" value="1"/>
-        <property key="labeling/shadowScale" value="100"/>
-        <property key="labeling/shadowTransparency" value="30"/>
-        <property key="labeling/shadowUnder" value="0"/>
-        <property key="labeling/shapeBlendMode" value="0"/>
-        <property key="labeling/shapeBorderColorA" value="255"/>
-        <property key="labeling/shapeBorderColorB" value="128"/>
-        <property key="labeling/shapeBorderColorG" value="128"/>
-        <property key="labeling/shapeBorderColorR" value="128"/>
-        <property key="labeling/shapeBorderWidth" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeBorderWidthUnits" value="1"/>
-        <property key="labeling/shapeDraw" value="false"/>
-        <property key="labeling/shapeFillColorA" value="255"/>
-        <property key="labeling/shapeFillColorB" value="255"/>
-        <property key="labeling/shapeFillColorG" value="255"/>
-        <property key="labeling/shapeFillColorR" value="255"/>
-        <property key="labeling/shapeJoinStyle" value="64"/>
-        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeOffsetUnits" value="1"/>
-        <property key="labeling/shapeOffsetX" value="0"/>
-        <property key="labeling/shapeOffsetY" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeRadiiUnits" value="1"/>
-        <property key="labeling/shapeRadiiX" value="0"/>
-        <property key="labeling/shapeRadiiY" value="0"/>
-        <property key="labeling/shapeRotation" value="0"/>
-        <property key="labeling/shapeRotationType" value="0"/>
-        <property key="labeling/shapeSVGFile" value=""/>
-        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeSizeType" value="0"/>
-        <property key="labeling/shapeSizeUnits" value="1"/>
-        <property key="labeling/shapeSizeX" value="0"/>
-        <property key="labeling/shapeSizeY" value="0"/>
-        <property key="labeling/shapeTransparency" value="0"/>
-        <property key="labeling/shapeType" value="0"/>
-        <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="0"/>
-        <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
-        <property key="labeling/upsidedownLabels" value="0"/>
-        <property key="labeling/wrapChar" value=""/>
-        <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
-      </customproperties>
+      <customproperties/>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>Id</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="MS Shell Dlg 2"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="Id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option name="IsMultiline" type="QString" value="0"/>
+                <Option name="UseHtml" type="QString" value="0"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="Id" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="0"/>
+      <defaults>
+        <default field="Id" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="Id" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="Id" desc="" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>.</editform>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1">.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
       <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
+      <previewExpression>"Id"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+    <maplayer type="raster" autoRefreshTime="0" refreshOnNotifyMessage="" maxScale="0" minScale="1e+08" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
       <extent>
         <xmin>528765</xmin>
         <ymin>180466.00000003495370038</ymin>
@@ -586,370 +522,445 @@
       <layername>osmgrey</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+          <wkt>PROJCRS["OSGB 1936 / British National Grid",BASEGEOGCRS["OSGB 1936",DATUM["OSGB 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["UK - Britain and UKCS 49°46'N to 61°01'N, 7°33'W to 3°33'E"],BBOX[49.75,-9.2,61.14,2.88]],ID["EPSG",27700]]</wkt>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
           <srsid>2437</srsid>
           <srid>27700</srid>
           <authid>EPSG:27700</authid>
           <description>OSGB 1936 / British National Grid</description>
           <projectionacronym>tmerc</projectionacronym>
-          <ellipsoidacronym>airy</ellipsoidacronym>
+          <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="1" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
       <customproperties>
         <property key="identify/format" value="Value"/>
       </customproperties>
-      <provider>gdal</provider>
-      <noData>
-        <noDataList bandNo="1" useSrcNoData="1"/>
-      </noData>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="paletted">
+        <rasterrenderer opacity="1" type="paletted" band="1" alphaBand="-1">
           <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
           <colorPalette>
-            <paletteEntry value="0" color="#000000"/>
-            <paletteEntry value="1" color="#020202"/>
-            <paletteEntry value="2" color="#040404"/>
-            <paletteEntry value="3" color="#050505"/>
-            <paletteEntry value="4" color="#070707"/>
-            <paletteEntry value="5" color="#080808"/>
-            <paletteEntry value="6" color="#0a0a0a"/>
-            <paletteEntry value="7" color="#0d0d0d"/>
-            <paletteEntry value="8" color="#0f0f0f"/>
-            <paletteEntry value="9" color="#101010"/>
-            <paletteEntry value="10" color="#181818"/>
-            <paletteEntry value="11" color="#1e1e1e"/>
-            <paletteEntry value="12" color="#1f1f1f"/>
-            <paletteEntry value="13" color="#202020"/>
-            <paletteEntry value="14" color="#212121"/>
-            <paletteEntry value="15" color="#292929"/>
-            <paletteEntry value="16" color="#2a2a2a"/>
-            <paletteEntry value="17" color="#2c2c2c"/>
-            <paletteEntry value="18" color="#313131"/>
-            <paletteEntry value="19" color="#393939"/>
-            <paletteEntry value="20" color="#404040"/>
-            <paletteEntry value="21" color="#414141"/>
-            <paletteEntry value="22" color="#444444"/>
-            <paletteEntry value="23" color="#4a4a4a"/>
-            <paletteEntry value="24" color="#4b4b4b"/>
-            <paletteEntry value="25" color="#515151"/>
-            <paletteEntry value="26" color="#525252"/>
-            <paletteEntry value="27" color="#545454"/>
-            <paletteEntry value="28" color="#555555"/>
-            <paletteEntry value="29" color="#565656"/>
-            <paletteEntry value="30" color="#575757"/>
-            <paletteEntry value="31" color="#595959"/>
-            <paletteEntry value="32" color="#5a5a5a"/>
-            <paletteEntry value="33" color="#5c5c5c"/>
-            <paletteEntry value="34" color="#5f5f5f"/>
-            <paletteEntry value="35" color="#616161"/>
-            <paletteEntry value="36" color="#626262"/>
-            <paletteEntry value="37" color="#646464"/>
-            <paletteEntry value="38" color="#656565"/>
-            <paletteEntry value="39" color="#666666"/>
-            <paletteEntry value="40" color="#676767"/>
-            <paletteEntry value="41" color="#696969"/>
-            <paletteEntry value="42" color="#6a6a6a"/>
-            <paletteEntry value="43" color="#6b6b6b"/>
-            <paletteEntry value="44" color="#6e6e6e"/>
-            <paletteEntry value="45" color="#717171"/>
-            <paletteEntry value="46" color="#767676"/>
-            <paletteEntry value="47" color="#797979"/>
-            <paletteEntry value="48" color="#7a7a7a"/>
-            <paletteEntry value="49" color="#7b7b7b"/>
-            <paletteEntry value="50" color="#7f7f7f"/>
-            <paletteEntry value="51" color="#808080"/>
-            <paletteEntry value="52" color="#838383"/>
-            <paletteEntry value="53" color="#878787"/>
-            <paletteEntry value="54" color="#888888"/>
-            <paletteEntry value="55" color="#898989"/>
-            <paletteEntry value="56" color="#8b8b8b"/>
-            <paletteEntry value="57" color="#8c8c8c"/>
-            <paletteEntry value="58" color="#8e8e8e"/>
-            <paletteEntry value="59" color="#929292"/>
-            <paletteEntry value="60" color="#939393"/>
-            <paletteEntry value="61" color="#979797"/>
-            <paletteEntry value="62" color="#999999"/>
-            <paletteEntry value="63" color="#9a9a9a"/>
-            <paletteEntry value="64" color="#9b9b9b"/>
-            <paletteEntry value="65" color="#9c9c9c"/>
-            <paletteEntry value="66" color="#a0a0a0"/>
-            <paletteEntry value="67" color="#a2a2a2"/>
-            <paletteEntry value="68" color="#a4a4a4"/>
-            <paletteEntry value="69" color="#a5a5a5"/>
-            <paletteEntry value="70" color="#a6a6a6"/>
-            <paletteEntry value="71" color="#a8a8a8"/>
-            <paletteEntry value="72" color="#aaaaaa"/>
-            <paletteEntry value="73" color="#ababab"/>
-            <paletteEntry value="74" color="#acacac"/>
-            <paletteEntry value="75" color="#b0b0b0"/>
-            <paletteEntry value="76" color="#b2b2b2"/>
-            <paletteEntry value="77" color="#b4b4b4"/>
-            <paletteEntry value="78" color="#b5b5b5"/>
-            <paletteEntry value="79" color="#bbbbbb"/>
-            <paletteEntry value="80" color="#bcbcbc"/>
-            <paletteEntry value="81" color="#bdbdbd"/>
-            <paletteEntry value="82" color="#c0c0c0"/>
-            <paletteEntry value="83" color="#c2c2c2"/>
-            <paletteEntry value="84" color="#c3c3c3"/>
-            <paletteEntry value="85" color="#c5c5c5"/>
-            <paletteEntry value="86" color="#c9c9c9"/>
-            <paletteEntry value="87" color="#cacaca"/>
-            <paletteEntry value="88" color="#cdcdcd"/>
-            <paletteEntry value="89" color="#cecece"/>
-            <paletteEntry value="90" color="#cfcfcf"/>
-            <paletteEntry value="91" color="#d0d0d0"/>
-            <paletteEntry value="92" color="#d3d3d3"/>
-            <paletteEntry value="93" color="#d4d4d4"/>
-            <paletteEntry value="94" color="#d5d5d5"/>
-            <paletteEntry value="95" color="#d6d6d6"/>
-            <paletteEntry value="96" color="#d8d8d8"/>
-            <paletteEntry value="97" color="#d9d9d9"/>
-            <paletteEntry value="98" color="#dadada"/>
-            <paletteEntry value="99" color="#dbdbdb"/>
-            <paletteEntry value="100" color="#dcdcdc"/>
-            <paletteEntry value="101" color="#dddddd"/>
-            <paletteEntry value="102" color="#dedede"/>
-            <paletteEntry value="103" color="#e0e0e0"/>
-            <paletteEntry value="104" color="#e1e1e1"/>
-            <paletteEntry value="105" color="#e3e3e3"/>
-            <paletteEntry value="106" color="#e4e4e4"/>
-            <paletteEntry value="107" color="#e5e5e5"/>
-            <paletteEntry value="108" color="#e6e6e6"/>
-            <paletteEntry value="109" color="#e7e7e7"/>
-            <paletteEntry value="110" color="#e8e8e8"/>
-            <paletteEntry value="111" color="#e9e9e9"/>
-            <paletteEntry value="112" color="#eaeaea"/>
-            <paletteEntry value="113" color="#ebebeb"/>
-            <paletteEntry value="114" color="#ececec"/>
-            <paletteEntry value="115" color="#ededed"/>
-            <paletteEntry value="116" color="#eeeeee"/>
-            <paletteEntry value="117" color="#efefef"/>
-            <paletteEntry value="118" color="#f1f1f1"/>
-            <paletteEntry value="119" color="#f2f2f2"/>
-            <paletteEntry value="120" color="#f3f3f3"/>
-            <paletteEntry value="121" color="#f4f4f4"/>
-            <paletteEntry value="122" color="#f5f5f5"/>
-            <paletteEntry value="123" color="#f6f6f6"/>
-            <paletteEntry value="124" color="#f7f7f7"/>
-            <paletteEntry value="125" color="#f8f8f8"/>
-            <paletteEntry value="126" color="#f9f9f9"/>
-            <paletteEntry value="127" color="#fafafa"/>
-            <paletteEntry value="128" color="#fbfbfb"/>
-            <paletteEntry value="129" color="#fcfcfc"/>
-            <paletteEntry value="130" color="#fdfdfd"/>
-            <paletteEntry value="131" color="#ffffff"/>
-            <paletteEntry value="132" color="#000000"/>
-            <paletteEntry value="133" color="#000000"/>
-            <paletteEntry value="134" color="#000000"/>
-            <paletteEntry value="135" color="#000000"/>
-            <paletteEntry value="136" color="#000000"/>
-            <paletteEntry value="137" color="#000000"/>
-            <paletteEntry value="138" color="#000000"/>
-            <paletteEntry value="139" color="#000000"/>
-            <paletteEntry value="140" color="#000000"/>
-            <paletteEntry value="141" color="#000000"/>
-            <paletteEntry value="142" color="#000000"/>
-            <paletteEntry value="143" color="#000000"/>
-            <paletteEntry value="144" color="#000000"/>
-            <paletteEntry value="145" color="#000000"/>
-            <paletteEntry value="146" color="#000000"/>
-            <paletteEntry value="147" color="#000000"/>
-            <paletteEntry value="148" color="#000000"/>
-            <paletteEntry value="149" color="#000000"/>
-            <paletteEntry value="150" color="#000000"/>
-            <paletteEntry value="151" color="#000000"/>
-            <paletteEntry value="152" color="#000000"/>
-            <paletteEntry value="153" color="#000000"/>
-            <paletteEntry value="154" color="#000000"/>
-            <paletteEntry value="155" color="#000000"/>
-            <paletteEntry value="156" color="#000000"/>
-            <paletteEntry value="157" color="#000000"/>
-            <paletteEntry value="158" color="#000000"/>
-            <paletteEntry value="159" color="#000000"/>
-            <paletteEntry value="160" color="#000000"/>
-            <paletteEntry value="161" color="#000000"/>
-            <paletteEntry value="162" color="#000000"/>
-            <paletteEntry value="163" color="#000000"/>
-            <paletteEntry value="164" color="#000000"/>
-            <paletteEntry value="165" color="#000000"/>
-            <paletteEntry value="166" color="#000000"/>
-            <paletteEntry value="167" color="#000000"/>
-            <paletteEntry value="168" color="#000000"/>
-            <paletteEntry value="169" color="#000000"/>
-            <paletteEntry value="170" color="#000000"/>
-            <paletteEntry value="171" color="#000000"/>
-            <paletteEntry value="172" color="#000000"/>
-            <paletteEntry value="173" color="#000000"/>
-            <paletteEntry value="174" color="#000000"/>
-            <paletteEntry value="175" color="#000000"/>
-            <paletteEntry value="176" color="#000000"/>
-            <paletteEntry value="177" color="#000000"/>
-            <paletteEntry value="178" color="#000000"/>
-            <paletteEntry value="179" color="#000000"/>
-            <paletteEntry value="180" color="#000000"/>
-            <paletteEntry value="181" color="#000000"/>
-            <paletteEntry value="182" color="#000000"/>
-            <paletteEntry value="183" color="#000000"/>
-            <paletteEntry value="184" color="#000000"/>
-            <paletteEntry value="185" color="#000000"/>
-            <paletteEntry value="186" color="#000000"/>
-            <paletteEntry value="187" color="#000000"/>
-            <paletteEntry value="188" color="#000000"/>
-            <paletteEntry value="189" color="#000000"/>
-            <paletteEntry value="190" color="#000000"/>
-            <paletteEntry value="191" color="#000000"/>
-            <paletteEntry value="192" color="#000000"/>
-            <paletteEntry value="193" color="#000000"/>
-            <paletteEntry value="194" color="#000000"/>
-            <paletteEntry value="195" color="#000000"/>
-            <paletteEntry value="196" color="#000000"/>
-            <paletteEntry value="197" color="#000000"/>
-            <paletteEntry value="198" color="#000000"/>
-            <paletteEntry value="199" color="#000000"/>
-            <paletteEntry value="200" color="#000000"/>
-            <paletteEntry value="201" color="#000000"/>
-            <paletteEntry value="202" color="#000000"/>
-            <paletteEntry value="203" color="#000000"/>
-            <paletteEntry value="204" color="#000000"/>
-            <paletteEntry value="205" color="#000000"/>
-            <paletteEntry value="206" color="#000000"/>
-            <paletteEntry value="207" color="#000000"/>
-            <paletteEntry value="208" color="#000000"/>
-            <paletteEntry value="209" color="#000000"/>
-            <paletteEntry value="210" color="#000000"/>
-            <paletteEntry value="211" color="#000000"/>
-            <paletteEntry value="212" color="#000000"/>
-            <paletteEntry value="213" color="#000000"/>
-            <paletteEntry value="214" color="#000000"/>
-            <paletteEntry value="215" color="#000000"/>
-            <paletteEntry value="216" color="#000000"/>
-            <paletteEntry value="217" color="#000000"/>
-            <paletteEntry value="218" color="#000000"/>
-            <paletteEntry value="219" color="#000000"/>
-            <paletteEntry value="220" color="#000000"/>
-            <paletteEntry value="221" color="#000000"/>
-            <paletteEntry value="222" color="#000000"/>
-            <paletteEntry value="223" color="#000000"/>
-            <paletteEntry value="224" color="#000000"/>
-            <paletteEntry value="225" color="#000000"/>
-            <paletteEntry value="226" color="#000000"/>
-            <paletteEntry value="227" color="#000000"/>
-            <paletteEntry value="228" color="#000000"/>
-            <paletteEntry value="229" color="#000000"/>
-            <paletteEntry value="230" color="#000000"/>
-            <paletteEntry value="231" color="#000000"/>
-            <paletteEntry value="232" color="#000000"/>
-            <paletteEntry value="233" color="#000000"/>
-            <paletteEntry value="234" color="#000000"/>
-            <paletteEntry value="235" color="#000000"/>
-            <paletteEntry value="236" color="#000000"/>
-            <paletteEntry value="237" color="#000000"/>
-            <paletteEntry value="238" color="#000000"/>
-            <paletteEntry value="239" color="#000000"/>
-            <paletteEntry value="240" color="#000000"/>
-            <paletteEntry value="241" color="#000000"/>
-            <paletteEntry value="242" color="#000000"/>
-            <paletteEntry value="243" color="#000000"/>
-            <paletteEntry value="244" color="#000000"/>
-            <paletteEntry value="245" color="#000000"/>
-            <paletteEntry value="246" color="#000000"/>
-            <paletteEntry value="247" color="#000000"/>
-            <paletteEntry value="248" color="#000000"/>
-            <paletteEntry value="249" color="#000000"/>
-            <paletteEntry value="250" color="#000000"/>
-            <paletteEntry value="251" color="#000000"/>
-            <paletteEntry value="252" color="#000000"/>
-            <paletteEntry value="253" color="#000000"/>
-            <paletteEntry value="254" color="#000000"/>
-            <paletteEntry value="255" color="#000000"/>
+            <paletteEntry color="#000000" alpha="255" value="0"/>
+            <paletteEntry color="#020202" alpha="255" value="1"/>
+            <paletteEntry color="#040404" alpha="255" value="2"/>
+            <paletteEntry color="#050505" alpha="255" value="3"/>
+            <paletteEntry color="#070707" alpha="255" value="4"/>
+            <paletteEntry color="#080808" alpha="255" value="5"/>
+            <paletteEntry color="#0a0a0a" alpha="255" value="6"/>
+            <paletteEntry color="#0d0d0d" alpha="255" value="7"/>
+            <paletteEntry color="#0f0f0f" alpha="255" value="8"/>
+            <paletteEntry color="#101010" alpha="255" value="9"/>
+            <paletteEntry color="#181818" alpha="255" value="10"/>
+            <paletteEntry color="#1e1e1e" alpha="255" value="11"/>
+            <paletteEntry color="#1f1f1f" alpha="255" value="12"/>
+            <paletteEntry color="#202020" alpha="255" value="13"/>
+            <paletteEntry color="#212121" alpha="255" value="14"/>
+            <paletteEntry color="#292929" alpha="255" value="15"/>
+            <paletteEntry color="#2a2a2a" alpha="255" value="16"/>
+            <paletteEntry color="#2c2c2c" alpha="255" value="17"/>
+            <paletteEntry color="#313131" alpha="255" value="18"/>
+            <paletteEntry color="#393939" alpha="255" value="19"/>
+            <paletteEntry color="#404040" alpha="255" value="20"/>
+            <paletteEntry color="#414141" alpha="255" value="21"/>
+            <paletteEntry color="#444444" alpha="255" value="22"/>
+            <paletteEntry color="#4a4a4a" alpha="255" value="23"/>
+            <paletteEntry color="#4b4b4b" alpha="255" value="24"/>
+            <paletteEntry color="#515151" alpha="255" value="25"/>
+            <paletteEntry color="#525252" alpha="255" value="26"/>
+            <paletteEntry color="#545454" alpha="255" value="27"/>
+            <paletteEntry color="#555555" alpha="255" value="28"/>
+            <paletteEntry color="#565656" alpha="255" value="29"/>
+            <paletteEntry color="#575757" alpha="255" value="30"/>
+            <paletteEntry color="#595959" alpha="255" value="31"/>
+            <paletteEntry color="#5a5a5a" alpha="255" value="32"/>
+            <paletteEntry color="#5c5c5c" alpha="255" value="33"/>
+            <paletteEntry color="#5f5f5f" alpha="255" value="34"/>
+            <paletteEntry color="#616161" alpha="255" value="35"/>
+            <paletteEntry color="#626262" alpha="255" value="36"/>
+            <paletteEntry color="#646464" alpha="255" value="37"/>
+            <paletteEntry color="#656565" alpha="255" value="38"/>
+            <paletteEntry color="#666666" alpha="255" value="39"/>
+            <paletteEntry color="#676767" alpha="255" value="40"/>
+            <paletteEntry color="#696969" alpha="255" value="41"/>
+            <paletteEntry color="#6a6a6a" alpha="255" value="42"/>
+            <paletteEntry color="#6b6b6b" alpha="255" value="43"/>
+            <paletteEntry color="#6e6e6e" alpha="255" value="44"/>
+            <paletteEntry color="#717171" alpha="255" value="45"/>
+            <paletteEntry color="#767676" alpha="255" value="46"/>
+            <paletteEntry color="#797979" alpha="255" value="47"/>
+            <paletteEntry color="#7a7a7a" alpha="255" value="48"/>
+            <paletteEntry color="#7b7b7b" alpha="255" value="49"/>
+            <paletteEntry color="#7f7f7f" alpha="255" value="50"/>
+            <paletteEntry color="#808080" alpha="255" value="51"/>
+            <paletteEntry color="#838383" alpha="255" value="52"/>
+            <paletteEntry color="#878787" alpha="255" value="53"/>
+            <paletteEntry color="#888888" alpha="255" value="54"/>
+            <paletteEntry color="#898989" alpha="255" value="55"/>
+            <paletteEntry color="#8b8b8b" alpha="255" value="56"/>
+            <paletteEntry color="#8c8c8c" alpha="255" value="57"/>
+            <paletteEntry color="#8e8e8e" alpha="255" value="58"/>
+            <paletteEntry color="#929292" alpha="255" value="59"/>
+            <paletteEntry color="#939393" alpha="255" value="60"/>
+            <paletteEntry color="#979797" alpha="255" value="61"/>
+            <paletteEntry color="#999999" alpha="255" value="62"/>
+            <paletteEntry color="#9a9a9a" alpha="255" value="63"/>
+            <paletteEntry color="#9b9b9b" alpha="255" value="64"/>
+            <paletteEntry color="#9c9c9c" alpha="255" value="65"/>
+            <paletteEntry color="#a0a0a0" alpha="255" value="66"/>
+            <paletteEntry color="#a2a2a2" alpha="255" value="67"/>
+            <paletteEntry color="#a4a4a4" alpha="255" value="68"/>
+            <paletteEntry color="#a5a5a5" alpha="255" value="69"/>
+            <paletteEntry color="#a6a6a6" alpha="255" value="70"/>
+            <paletteEntry color="#a8a8a8" alpha="255" value="71"/>
+            <paletteEntry color="#aaaaaa" alpha="255" value="72"/>
+            <paletteEntry color="#ababab" alpha="255" value="73"/>
+            <paletteEntry color="#acacac" alpha="255" value="74"/>
+            <paletteEntry color="#b0b0b0" alpha="255" value="75"/>
+            <paletteEntry color="#b2b2b2" alpha="255" value="76"/>
+            <paletteEntry color="#b4b4b4" alpha="255" value="77"/>
+            <paletteEntry color="#b5b5b5" alpha="255" value="78"/>
+            <paletteEntry color="#bbbbbb" alpha="255" value="79"/>
+            <paletteEntry color="#bcbcbc" alpha="255" value="80"/>
+            <paletteEntry color="#bdbdbd" alpha="255" value="81"/>
+            <paletteEntry color="#c0c0c0" alpha="255" value="82"/>
+            <paletteEntry color="#c2c2c2" alpha="255" value="83"/>
+            <paletteEntry color="#c3c3c3" alpha="255" value="84"/>
+            <paletteEntry color="#c5c5c5" alpha="255" value="85"/>
+            <paletteEntry color="#c9c9c9" alpha="255" value="86"/>
+            <paletteEntry color="#cacaca" alpha="255" value="87"/>
+            <paletteEntry color="#cdcdcd" alpha="255" value="88"/>
+            <paletteEntry color="#cecece" alpha="255" value="89"/>
+            <paletteEntry color="#cfcfcf" alpha="255" value="90"/>
+            <paletteEntry color="#d0d0d0" alpha="255" value="91"/>
+            <paletteEntry color="#d3d3d3" alpha="255" value="92"/>
+            <paletteEntry color="#d4d4d4" alpha="255" value="93"/>
+            <paletteEntry color="#d5d5d5" alpha="255" value="94"/>
+            <paletteEntry color="#d6d6d6" alpha="255" value="95"/>
+            <paletteEntry color="#d8d8d8" alpha="255" value="96"/>
+            <paletteEntry color="#d9d9d9" alpha="255" value="97"/>
+            <paletteEntry color="#dadada" alpha="255" value="98"/>
+            <paletteEntry color="#dbdbdb" alpha="255" value="99"/>
+            <paletteEntry color="#dcdcdc" alpha="255" value="100"/>
+            <paletteEntry color="#dddddd" alpha="255" value="101"/>
+            <paletteEntry color="#dedede" alpha="255" value="102"/>
+            <paletteEntry color="#e0e0e0" alpha="255" value="103"/>
+            <paletteEntry color="#e1e1e1" alpha="255" value="104"/>
+            <paletteEntry color="#e3e3e3" alpha="255" value="105"/>
+            <paletteEntry color="#e4e4e4" alpha="255" value="106"/>
+            <paletteEntry color="#e5e5e5" alpha="255" value="107"/>
+            <paletteEntry color="#e6e6e6" alpha="255" value="108"/>
+            <paletteEntry color="#e7e7e7" alpha="255" value="109"/>
+            <paletteEntry color="#e8e8e8" alpha="255" value="110"/>
+            <paletteEntry color="#e9e9e9" alpha="255" value="111"/>
+            <paletteEntry color="#eaeaea" alpha="255" value="112"/>
+            <paletteEntry color="#ebebeb" alpha="255" value="113"/>
+            <paletteEntry color="#ececec" alpha="255" value="114"/>
+            <paletteEntry color="#ededed" alpha="255" value="115"/>
+            <paletteEntry color="#eeeeee" alpha="255" value="116"/>
+            <paletteEntry color="#efefef" alpha="255" value="117"/>
+            <paletteEntry color="#f1f1f1" alpha="255" value="118"/>
+            <paletteEntry color="#f2f2f2" alpha="255" value="119"/>
+            <paletteEntry color="#f3f3f3" alpha="255" value="120"/>
+            <paletteEntry color="#f4f4f4" alpha="255" value="121"/>
+            <paletteEntry color="#f5f5f5" alpha="255" value="122"/>
+            <paletteEntry color="#f6f6f6" alpha="255" value="123"/>
+            <paletteEntry color="#f7f7f7" alpha="255" value="124"/>
+            <paletteEntry color="#f8f8f8" alpha="255" value="125"/>
+            <paletteEntry color="#f9f9f9" alpha="255" value="126"/>
+            <paletteEntry color="#fafafa" alpha="255" value="127"/>
+            <paletteEntry color="#fbfbfb" alpha="255" value="128"/>
+            <paletteEntry color="#fcfcfc" alpha="255" value="129"/>
+            <paletteEntry color="#fdfdfd" alpha="255" value="130"/>
+            <paletteEntry color="#ffffff" alpha="255" value="131"/>
+            <paletteEntry color="#000000" alpha="255" value="132"/>
+            <paletteEntry color="#000000" alpha="255" value="133"/>
+            <paletteEntry color="#000000" alpha="255" value="134"/>
+            <paletteEntry color="#000000" alpha="255" value="135"/>
+            <paletteEntry color="#000000" alpha="255" value="136"/>
+            <paletteEntry color="#000000" alpha="255" value="137"/>
+            <paletteEntry color="#000000" alpha="255" value="138"/>
+            <paletteEntry color="#000000" alpha="255" value="139"/>
+            <paletteEntry color="#000000" alpha="255" value="140"/>
+            <paletteEntry color="#000000" alpha="255" value="141"/>
+            <paletteEntry color="#000000" alpha="255" value="142"/>
+            <paletteEntry color="#000000" alpha="255" value="143"/>
+            <paletteEntry color="#000000" alpha="255" value="144"/>
+            <paletteEntry color="#000000" alpha="255" value="145"/>
+            <paletteEntry color="#000000" alpha="255" value="146"/>
+            <paletteEntry color="#000000" alpha="255" value="147"/>
+            <paletteEntry color="#000000" alpha="255" value="148"/>
+            <paletteEntry color="#000000" alpha="255" value="149"/>
+            <paletteEntry color="#000000" alpha="255" value="150"/>
+            <paletteEntry color="#000000" alpha="255" value="151"/>
+            <paletteEntry color="#000000" alpha="255" value="152"/>
+            <paletteEntry color="#000000" alpha="255" value="153"/>
+            <paletteEntry color="#000000" alpha="255" value="154"/>
+            <paletteEntry color="#000000" alpha="255" value="155"/>
+            <paletteEntry color="#000000" alpha="255" value="156"/>
+            <paletteEntry color="#000000" alpha="255" value="157"/>
+            <paletteEntry color="#000000" alpha="255" value="158"/>
+            <paletteEntry color="#000000" alpha="255" value="159"/>
+            <paletteEntry color="#000000" alpha="255" value="160"/>
+            <paletteEntry color="#000000" alpha="255" value="161"/>
+            <paletteEntry color="#000000" alpha="255" value="162"/>
+            <paletteEntry color="#000000" alpha="255" value="163"/>
+            <paletteEntry color="#000000" alpha="255" value="164"/>
+            <paletteEntry color="#000000" alpha="255" value="165"/>
+            <paletteEntry color="#000000" alpha="255" value="166"/>
+            <paletteEntry color="#000000" alpha="255" value="167"/>
+            <paletteEntry color="#000000" alpha="255" value="168"/>
+            <paletteEntry color="#000000" alpha="255" value="169"/>
+            <paletteEntry color="#000000" alpha="255" value="170"/>
+            <paletteEntry color="#000000" alpha="255" value="171"/>
+            <paletteEntry color="#000000" alpha="255" value="172"/>
+            <paletteEntry color="#000000" alpha="255" value="173"/>
+            <paletteEntry color="#000000" alpha="255" value="174"/>
+            <paletteEntry color="#000000" alpha="255" value="175"/>
+            <paletteEntry color="#000000" alpha="255" value="176"/>
+            <paletteEntry color="#000000" alpha="255" value="177"/>
+            <paletteEntry color="#000000" alpha="255" value="178"/>
+            <paletteEntry color="#000000" alpha="255" value="179"/>
+            <paletteEntry color="#000000" alpha="255" value="180"/>
+            <paletteEntry color="#000000" alpha="255" value="181"/>
+            <paletteEntry color="#000000" alpha="255" value="182"/>
+            <paletteEntry color="#000000" alpha="255" value="183"/>
+            <paletteEntry color="#000000" alpha="255" value="184"/>
+            <paletteEntry color="#000000" alpha="255" value="185"/>
+            <paletteEntry color="#000000" alpha="255" value="186"/>
+            <paletteEntry color="#000000" alpha="255" value="187"/>
+            <paletteEntry color="#000000" alpha="255" value="188"/>
+            <paletteEntry color="#000000" alpha="255" value="189"/>
+            <paletteEntry color="#000000" alpha="255" value="190"/>
+            <paletteEntry color="#000000" alpha="255" value="191"/>
+            <paletteEntry color="#000000" alpha="255" value="192"/>
+            <paletteEntry color="#000000" alpha="255" value="193"/>
+            <paletteEntry color="#000000" alpha="255" value="194"/>
+            <paletteEntry color="#000000" alpha="255" value="195"/>
+            <paletteEntry color="#000000" alpha="255" value="196"/>
+            <paletteEntry color="#000000" alpha="255" value="197"/>
+            <paletteEntry color="#000000" alpha="255" value="198"/>
+            <paletteEntry color="#000000" alpha="255" value="199"/>
+            <paletteEntry color="#000000" alpha="255" value="200"/>
+            <paletteEntry color="#000000" alpha="255" value="201"/>
+            <paletteEntry color="#000000" alpha="255" value="202"/>
+            <paletteEntry color="#000000" alpha="255" value="203"/>
+            <paletteEntry color="#000000" alpha="255" value="204"/>
+            <paletteEntry color="#000000" alpha="255" value="205"/>
+            <paletteEntry color="#000000" alpha="255" value="206"/>
+            <paletteEntry color="#000000" alpha="255" value="207"/>
+            <paletteEntry color="#000000" alpha="255" value="208"/>
+            <paletteEntry color="#000000" alpha="255" value="209"/>
+            <paletteEntry color="#000000" alpha="255" value="210"/>
+            <paletteEntry color="#000000" alpha="255" value="211"/>
+            <paletteEntry color="#000000" alpha="255" value="212"/>
+            <paletteEntry color="#000000" alpha="255" value="213"/>
+            <paletteEntry color="#000000" alpha="255" value="214"/>
+            <paletteEntry color="#000000" alpha="255" value="215"/>
+            <paletteEntry color="#000000" alpha="255" value="216"/>
+            <paletteEntry color="#000000" alpha="255" value="217"/>
+            <paletteEntry color="#000000" alpha="255" value="218"/>
+            <paletteEntry color="#000000" alpha="255" value="219"/>
+            <paletteEntry color="#000000" alpha="255" value="220"/>
+            <paletteEntry color="#000000" alpha="255" value="221"/>
+            <paletteEntry color="#000000" alpha="255" value="222"/>
+            <paletteEntry color="#000000" alpha="255" value="223"/>
+            <paletteEntry color="#000000" alpha="255" value="224"/>
+            <paletteEntry color="#000000" alpha="255" value="225"/>
+            <paletteEntry color="#000000" alpha="255" value="226"/>
+            <paletteEntry color="#000000" alpha="255" value="227"/>
+            <paletteEntry color="#000000" alpha="255" value="228"/>
+            <paletteEntry color="#000000" alpha="255" value="229"/>
+            <paletteEntry color="#000000" alpha="255" value="230"/>
+            <paletteEntry color="#000000" alpha="255" value="231"/>
+            <paletteEntry color="#000000" alpha="255" value="232"/>
+            <paletteEntry color="#000000" alpha="255" value="233"/>
+            <paletteEntry color="#000000" alpha="255" value="234"/>
+            <paletteEntry color="#000000" alpha="255" value="235"/>
+            <paletteEntry color="#000000" alpha="255" value="236"/>
+            <paletteEntry color="#000000" alpha="255" value="237"/>
+            <paletteEntry color="#000000" alpha="255" value="238"/>
+            <paletteEntry color="#000000" alpha="255" value="239"/>
+            <paletteEntry color="#000000" alpha="255" value="240"/>
+            <paletteEntry color="#000000" alpha="255" value="241"/>
+            <paletteEntry color="#000000" alpha="255" value="242"/>
+            <paletteEntry color="#000000" alpha="255" value="243"/>
+            <paletteEntry color="#000000" alpha="255" value="244"/>
+            <paletteEntry color="#000000" alpha="255" value="245"/>
+            <paletteEntry color="#000000" alpha="255" value="246"/>
+            <paletteEntry color="#000000" alpha="255" value="247"/>
+            <paletteEntry color="#000000" alpha="255" value="248"/>
+            <paletteEntry color="#000000" alpha="255" value="249"/>
+            <paletteEntry color="#000000" alpha="255" value="250"/>
+            <paletteEntry color="#000000" alpha="255" value="251"/>
+            <paletteEntry color="#000000" alpha="255" value="252"/>
+            <paletteEntry color="#000000" alpha="255" value="253"/>
+            <paletteEntry color="#000000" alpha="255" value="254"/>
+            <paletteEntry color="#000000" alpha="255" value="255"/>
           </colorPalette>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <huesaturation grayscaleMode="0" saturation="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255" colorizeOn="0" colorizeStrength="100"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
   </projectlayers>
+  <layerorder>
+    <layer id="Pumps20130804123454093"/>
+    <layer id="Cholera_Deaths20130804123454077"/>
+    <layer id="osmgrey20130804123500101"/>
+  </layerorder>
   <properties>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WFSUrl type="QString"></WFSUrl>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
-    <WFSLayers type="QStringList"/>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">D</DegreeFormat>
-    </PositionPrecision>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
-    <Measure>
-      <Ellipsoid type="QString">NONE</Ellipsoid>
-    </Measure>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WFSTLayers>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-    </Gui>
-    <Identify>
-      <disabledLayers type="QStringList"/>
-    </Identify>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSAccessConstraints type="QString"></WMSAccessConstraints>
-    <WCSLayers type="QStringList"/>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:27700</ProjectCrs>
-      <ProjectCRSID type="int">2437</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
-    </SpatialRefSys>
     <DefaultStyles>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
       <Fill type="QString"></Fill>
       <Line type="QString"></Line>
       <Marker type="QString"></Marker>
       <RandomColors type="bool">true</RandomColors>
-      <AlphaInt type="int">255</AlphaInt>
-      <ColorRamp type="QString"></ColorRamp>
     </DefaultStyles>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString"></AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">D</DegreeFormat>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectCRSID type="int">2437</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:27700</ProjectCrs>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSLayers type="QStringList"/>
+    <WFSTLayers>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAccessConstraints type="QString"></WMSAccessConstraints>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSFees type="QString"></WMSFees>
     <WMSImageQuality type="int">90</WMSImageQuality>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString"></AreaUnits>
-    </Measurement>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
     <WMSUrl type="QString"></WMSUrl>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author></author>
+    <creation></creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+  </ProjectViewSettings>
 </qgis>

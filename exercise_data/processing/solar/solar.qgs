@@ -1,14 +1,37 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.14.1-Essen">
+<qgis projectname="" version="3.10.4-A Coruña">
+  <homePath path=""/>
   <title></title>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Italy - west of 12°E"],BBOX[36.53,5.94,47.04,12]],ID["EPSG",3003]]</wkt>
+      <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
+      <srsid>968</srsid>
+      <srid>3003</srid>
+      <authid>EPSG:3003</authid>
+      <description>Monte Mario / Italy zone 1</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="dem20140417180359628" name="dem">
+    <layer-tree-layer providerKey="gdal" name="dem" expanded="0" source="./dem.tif" id="dem20140417180359628" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>dem20140417180359628</item>
+    </custom-order>
   </layer-tree-group>
+  <snapping-settings enabled="1" type="1" mode="3" intersection-snapping="0" unit="2" tolerance="0">
+    <individual-layer-settings/>
+  </snapping-settings>
   <relations/>
-  <mapcanvas>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
       <xmin>1649394.76664840918965638</xmin>
@@ -17,173 +40,331 @@
       <ymax>4835702.51864129584282637</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</proj4>
+        <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Italy - west of 12°E"],BBOX[36.53,5.94,47.04,12]],ID["EPSG",3003]]</wkt>
+        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
         <srsid>968</srsid>
         <srid>3003</srid>
         <authid>EPSG:3003</authid>
         <description>Monte Mario / Italy zone 1</description>
         <projectionacronym>tmerc</projectionacronym>
-        <ellipsoidacronym>intl</ellipsoidacronym>
+        <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3003" srcAuthId="EPSG:102091" srcDatumTransform="-1" destDatumTransform="-1" layerid="Output_vector_layer20140417182814426"/>
-      <layer_coordinate_transform destAuthId="EPSG:3003" srcAuthId="EPSG:3003" srcDatumTransform="-1" destDatumTransform="-1" layerid="dem20140417180359628"/>
-    </layer_coordinate_transform_info>
+    <expressionContextScope/>
   </mapcanvas>
-  <layer-tree-canvas>
-    <custom-order enabled="0">
-      <item>dem20140417180359628</item>
-    </custom-order>
-  </layer-tree-canvas>
+  <DataPlotly>
+    <Option type="Map">
+      <Option name="dynamic_properties" type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+      </Option>
+      <Option name="plot_layout" type="Map">
+        <Option name="additional_info_expression" type="QString" value=""/>
+        <Option name="bar_mode" type="QString" value="group"/>
+        <Option name="bargaps" type="double" value="0"/>
+        <Option name="bins_check" type="bool" value="false"/>
+        <Option name="legend" type="bool" value="true"/>
+        <Option name="legend_orientation" type="QString" value="v"/>
+        <Option name="legend_title" type="invalid"/>
+        <Option name="polar" type="Map">
+          <Option name="angularaxis" type="Map">
+            <Option name="direction" type="QString" value="clockwise"/>
+          </Option>
+        </Option>
+        <Option name="range_slider" type="Map">
+          <Option name="borderwidth" type="int" value="1"/>
+          <Option name="visible" type="bool" value="false"/>
+        </Option>
+        <Option name="title" type="QString" value=""/>
+        <Option name="x_inv" type="invalid"/>
+        <Option name="x_max" type="invalid"/>
+        <Option name="x_min" type="invalid"/>
+        <Option name="x_title" type="QString" value=""/>
+        <Option name="x_type" type="QString" value="linear"/>
+        <Option name="xaxis" type="invalid"/>
+        <Option name="y_inv" type="invalid"/>
+        <Option name="y_max" type="invalid"/>
+        <Option name="y_min" type="invalid"/>
+        <Option name="y_title" type="QString" value=""/>
+        <Option name="y_type" type="QString" value="linear"/>
+        <Option name="z_title" type="QString" value=""/>
+      </Option>
+      <Option name="plot_properties" type="Map">
+        <Option name="additional_hover_text" type="invalid"/>
+        <Option name="bins" type="int" value="10"/>
+        <Option name="box_orientation" type="QString" value="v"/>
+        <Option name="box_outliers" type="bool" value="false"/>
+        <Option name="box_stat" type="bool" value="false"/>
+        <Option name="color_scale" type="QString" value="Greys"/>
+        <Option name="color_scale_data_defined_in_check" type="bool" value="false"/>
+        <Option name="color_scale_data_defined_in_invert_check" type="bool" value="false"/>
+        <Option name="cont_type" type="QString" value="fill"/>
+        <Option name="contour_type_combo" type="QString" value="Riempimento"/>
+        <Option name="cumulative" type="bool" value="false"/>
+        <Option name="custom" type="List">
+          <Option type="QString" value=""/>
+        </Option>
+        <Option name="hover_label_position" type="QString" value="auto"/>
+        <Option name="hover_label_text" type="invalid"/>
+        <Option name="hover_text" type="QString" value="all"/>
+        <Option name="in_color" type="QString" value="#8ebad9"/>
+        <Option name="invert_color_scale" type="bool" value="false"/>
+        <Option name="invert_hist" type="QString" value="increasing"/>
+        <Option name="line_combo" type="QString" value="Linea continua"/>
+        <Option name="line_dash" type="QString" value="solid"/>
+        <Option name="marker" type="QString" value="markers"/>
+        <Option name="marker_size" type="double" value="10"/>
+        <Option name="marker_symbol" type="int" value="0"/>
+        <Option name="marker_type_combo" type="QString" value="Punti"/>
+        <Option name="marker_width" type="double" value="1"/>
+        <Option name="name" type="QString" value=""/>
+        <Option name="normalization" type="QString" value=""/>
+        <Option name="opacity" type="double" value="1"/>
+        <Option name="out_color" type="QString" value="#1f77b4"/>
+        <Option name="point_combo" type="QString" value=""/>
+        <Option name="selected_features_only" type="bool" value="false"/>
+        <Option name="show_colorscale_legend" type="bool" value="false"/>
+        <Option name="show_lines" type="bool" value="true"/>
+        <Option name="show_lines_check" type="bool" value="true"/>
+        <Option name="show_mean_line" type="bool" value="true"/>
+        <Option name="violin_box" type="bool" value="true"/>
+        <Option name="violin_side" type="QString" value="both"/>
+        <Option name="visible_features_only" type="bool" value="false"/>
+        <Option name="x_name" type="QString" value=""/>
+        <Option name="y_name" type="QString" value=""/>
+        <Option name="z_name" type="QString" value=""/>
+      </Option>
+      <Option name="plot_type" type="QString" value="scatter"/>
+      <Option name="source_layer_id" type="invalid"/>
+    </Option>
+  </DataPlotly>
+  <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="dem" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" name="dem" showFeatureCount="0" checked="Qt::Checked">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="dem20140417180359628" visible="1"/>
+        <legendlayerfile isInOverview="0" visible="1" layerid="dem20140417180359628"/>
       </filegroup>
     </legendlayer>
   </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
   <projectlayers>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+    <maplayer type="raster" autoRefreshTime="0" refreshOnNotifyMessage="" maxScale="-4.65661e-10" minScale="1e+08" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+      <extent>
+        <xmin>1650370.47056663990952075</xmin>
+        <ymin>4803364.45415655989199877</ymin>
+        <xmax>1689398.62729587010107934</xmax>
+        <ymax>4834913.78536118008196354</ymax>
+      </extent>
       <id>dem20140417180359628</id>
       <datasource>./dem.tif</datasource>
-      <shortname></shortname>
-      <title></title>
-      <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>dem</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</proj4>
+          <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Italy - west of 12°E"],BBOX[36.53,5.94,47.04,12]],ID["EPSG",3003]]</wkt>
+          <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
           <srsid>968</srsid>
           <srid>3003</srid>
           <authid>EPSG:3003</authid>
           <description>Monte Mario / Italy zone 1</description>
           <projectionacronym>tmerc</projectionacronym>
-          <ellipsoidacronym>intl</ellipsoidacronym>
+          <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
       <customproperties>
         <property key="identify/format" value="Value"/>
       </customproperties>
-      <provider>gdal</provider>
-      <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
-      </noData>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="0" classificationMax="624" classificationMinMaxOrigin="MinMaxFullExtentEstimated" band="1" classificationMin="27" type="singlebandpseudocolor">
+        <rasterrenderer opacity="1" classificationMin="27" type="singlebandpseudocolor" classificationMax="624" band="1" alphaBand="0">
           <rasterTransparency>
             <singleValuePixelList>
               <pixelListEntry min="0" max="27" percentTransparent="100"/>
             </singleValuePixelList>
           </rasterTransparency>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
           <rastershader>
-            <colorrampshader colorRampType="INTERPOLATED" clip="0">
-              <item alpha="255" value="27" label="27.000000" color="#54e597"/>
-              <item alpha="255" value="39.4773" label="39.477300" color="#61f082"/>
-              <item alpha="255" value="51.9546" label="51.954600" color="#73f775"/>
-              <item alpha="255" value="64.3722" label="64.372200" color="#94fe85"/>
-              <item alpha="255" value="76.8495" label="76.849500" color="#9efe87"/>
-              <item alpha="255" value="89.3268" label="89.326800" color="#adfd88"/>
-              <item alpha="255" value="101.804" label="101.804100" color="#b4fe8b"/>
-              <item alpha="255" value="114.281" label="114.281400" color="#bdfe8c"/>
-              <item alpha="255" value="126.759" label="126.758700" color="#c5fd8d"/>
-              <item alpha="255" value="139.176" label="139.176300" color="#cffe90"/>
-              <item alpha="255" value="151.654" label="151.653600" color="#d7fe92"/>
-              <item alpha="255" value="164.131" label="164.130900" color="#dffe93"/>
-              <item alpha="255" value="176.608" label="176.608200" color="#e7fe95"/>
-              <item alpha="255" value="189.085" label="189.085500" color="#eefd97"/>
-              <item alpha="255" value="201.503" label="201.503100" color="#f7fe9a"/>
-              <item alpha="255" value="213.98" label="213.980400" color="#fefe9b"/>
-              <item alpha="255" value="226.458" label="226.457700" color="#fdfc97"/>
-              <item alpha="255" value="238.935" label="238.935000" color="#fef895"/>
-              <item alpha="255" value="251.412" label="251.412300" color="#fdf292"/>
-              <item alpha="255" value="263.89" label="263.889600" color="#feee92"/>
-              <item alpha="255" value="276.307" label="276.307200" color="#fde98c"/>
-              <item alpha="255" value="288.784" label="288.784500" color="#fee187"/>
-              <item alpha="255" value="301.262" label="301.261800" color="#fddb7f"/>
-              <item alpha="255" value="313.739" label="313.739100" color="#fed779"/>
-              <item alpha="255" value="326.216" label="326.216400" color="#fdce7d"/>
-              <item alpha="255" value="338.634" label="338.634000" color="#facb80"/>
-              <item alpha="255" value="351.111" label="351.111300" color="#f8c583"/>
-              <item alpha="255" value="363.589" label="363.588600" color="#f6c586"/>
-              <item alpha="255" value="376.066" label="376.065900" color="#f4c588"/>
-              <item alpha="255" value="388.543" label="388.543200" color="#f2be8b"/>
-              <item alpha="255" value="401.021" label="401.020500" color="#f0bc8f"/>
-              <item alpha="255" value="413.438" label="413.438100" color="#eebb91"/>
-              <item alpha="255" value="425.915" label="425.915400" color="#ebbc99"/>
-              <item alpha="255" value="438.393" label="438.392700" color="#ebc2a4"/>
-              <item alpha="255" value="450.87" label="450.870000" color="#e8c5ac"/>
-              <item alpha="255" value="463.347" label="463.347300" color="#e6c8b1"/>
-              <item alpha="255" value="475.765" label="475.764900" color="#dfc6b3"/>
-              <item alpha="255" value="488.242" label="488.242200" color="#ddc7b7"/>
-              <item alpha="255" value="500.719" label="500.719500" color="#e0cfc2"/>
-              <item alpha="255" value="513.197" label="513.196800" color="#e4d6cb"/>
-              <item alpha="255" value="525.674" label="525.674100" color="#e8ddd4"/>
-              <item alpha="255" value="538.092" label="538.091700" color="#ebe2db"/>
-              <item alpha="255" value="550.569" label="550.569000" color="#efe7e1"/>
-              <item alpha="255" value="563.046" label="563.046300" color="#f3eeea"/>
-              <item alpha="255" value="575.524" label="575.523600" color="#f6f0ec"/>
-              <item alpha="255" value="588.001" label="588.000900" color="#faf9f8"/>
-              <item alpha="255" value="600.478" label="600.478200" color="#ffffff"/>
-              <item alpha="255" value="624" label="624.000000" color="#ffffff"/>
+            <colorrampshader colorRampType="INTERPOLATED" classificationMode="1" clip="0">
+              <item label="27.000000" color="#54e597" alpha="255" value="27"/>
+              <item label="39.477300" color="#61f082" alpha="255" value="39.4773"/>
+              <item label="51.954600" color="#73f775" alpha="255" value="51.9546"/>
+              <item label="64.372200" color="#94fe85" alpha="255" value="64.3722"/>
+              <item label="76.849500" color="#9efe87" alpha="255" value="76.8495"/>
+              <item label="89.326800" color="#adfd88" alpha="255" value="89.3268"/>
+              <item label="101.804100" color="#b4fe8b" alpha="255" value="101.804"/>
+              <item label="114.281400" color="#bdfe8c" alpha="255" value="114.281"/>
+              <item label="126.758700" color="#c5fd8d" alpha="255" value="126.759"/>
+              <item label="139.176300" color="#cffe90" alpha="255" value="139.176"/>
+              <item label="151.653600" color="#d7fe92" alpha="255" value="151.654"/>
+              <item label="164.130900" color="#dffe93" alpha="255" value="164.131"/>
+              <item label="176.608200" color="#e7fe95" alpha="255" value="176.608"/>
+              <item label="189.085500" color="#eefd97" alpha="255" value="189.085"/>
+              <item label="201.503100" color="#f7fe9a" alpha="255" value="201.503"/>
+              <item label="213.980400" color="#fefe9b" alpha="255" value="213.98"/>
+              <item label="226.457700" color="#fdfc97" alpha="255" value="226.458"/>
+              <item label="238.935000" color="#fef895" alpha="255" value="238.935"/>
+              <item label="251.412300" color="#fdf292" alpha="255" value="251.412"/>
+              <item label="263.889600" color="#feee92" alpha="255" value="263.89"/>
+              <item label="276.307200" color="#fde98c" alpha="255" value="276.307"/>
+              <item label="288.784500" color="#fee187" alpha="255" value="288.784"/>
+              <item label="301.261800" color="#fddb7f" alpha="255" value="301.262"/>
+              <item label="313.739100" color="#fed779" alpha="255" value="313.739"/>
+              <item label="326.216400" color="#fdce7d" alpha="255" value="326.216"/>
+              <item label="338.634000" color="#facb80" alpha="255" value="338.634"/>
+              <item label="351.111300" color="#f8c583" alpha="255" value="351.111"/>
+              <item label="363.588600" color="#f6c586" alpha="255" value="363.589"/>
+              <item label="376.065900" color="#f4c588" alpha="255" value="376.066"/>
+              <item label="388.543200" color="#f2be8b" alpha="255" value="388.543"/>
+              <item label="401.020500" color="#f0bc8f" alpha="255" value="401.021"/>
+              <item label="413.438100" color="#eebb91" alpha="255" value="413.438"/>
+              <item label="425.915400" color="#ebbc99" alpha="255" value="425.915"/>
+              <item label="438.392700" color="#ebc2a4" alpha="255" value="438.393"/>
+              <item label="450.870000" color="#e8c5ac" alpha="255" value="450.87"/>
+              <item label="463.347300" color="#e6c8b1" alpha="255" value="463.347"/>
+              <item label="475.764900" color="#dfc6b3" alpha="255" value="475.765"/>
+              <item label="488.242200" color="#ddc7b7" alpha="255" value="488.242"/>
+              <item label="500.719500" color="#e0cfc2" alpha="255" value="500.719"/>
+              <item label="513.196800" color="#e4d6cb" alpha="255" value="513.197"/>
+              <item label="525.674100" color="#e8ddd4" alpha="255" value="525.674"/>
+              <item label="538.091700" color="#ebe2db" alpha="255" value="538.092"/>
+              <item label="550.569000" color="#efe7e1" alpha="255" value="550.569"/>
+              <item label="563.046300" color="#f3eeea" alpha="255" value="563.046"/>
+              <item label="575.523600" color="#f6f0ec" alpha="255" value="575.524"/>
+              <item label="588.000900" color="#faf9f8" alpha="255" value="588.001"/>
+              <item label="600.478200" color="#ffffff" alpha="255" value="600.478"/>
+              <item label="624.000000" color="#ffffff" alpha="255" value="624"/>
             </colorrampshader>
           </rastershader>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <huesaturation grayscaleMode="0" saturation="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255" colorizeOn="0" colorizeStrength="100"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
   </projectlayers>
+  <layerorder>
+    <layer id="dem20140417180359628"/>
+  </layerorder>
   <properties>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString"></AreaUnits>
-    </Measurement>
-    <SemiAutomaticClassificationPlugin>
-      <bandSetPresent type="QString">No</bandSetPresent>
-      <bndSetWvLn type="QString">[]</bndSetWvLn>
-      <bndSetUnit type="QString">band number</bndSetUnit>
-      <bandSet type="QString">[]</bandSet>
-    </SemiAutomaticClassificationPlugin>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
     <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
       <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
       <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <Measurement>
+      <AreaUnits type="QString"></AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SemiAutomaticClassificationPlugin>
+      <bandSet type="QString">[]</bandSet>
+      <bandSetPresent type="QString">No</bandSetPresent>
+      <bndSetUnit type="QString">band number</bndSetUnit>
+      <bndSetWvLn type="QString">[]</bndSetWvLn>
+    </SemiAutomaticClassificationPlugin>
+    <SpatialRefSys>
+      <ProjectCRSID type="int">968</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:3003</ProjectCrs>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
   </properties>
   <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author></author>
+    <creation></creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+  </ProjectViewSettings>
 </qgis>
