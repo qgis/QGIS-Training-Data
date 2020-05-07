@@ -1,0 +1,287 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:cliprasterbymasklayer_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:cliprasterbymasklayer" type="QString" name="alg_id"/>
+      <Option value="Clip raster by mask layer" type="QString" name="component_description"/>
+      <Option value="122" type="double" name="component_pos_x"/>
+      <Option value="127" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:cliprasterbymasklayer_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALPHA_BAND">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="CROP_TO_CUTLINE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="EXTRA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="Rasterlayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="KEEP_RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MASK">
+          <Option type="Map">
+            <Option value="polygonslayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MULTITHREADING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SET_RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SOURCE_CRS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="X_RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="Y_RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:rasterlayerstatistics_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:rasterlayerstatistics" type="QString" name="alg_id"/>
+      <Option value="Raster layer statistics" type="QString" name="component_description"/>
+      <Option value="460" type="double" name="component_pos_x"/>
+      <Option value="208" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:rasterlayerstatistics_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="statistics">
+          <Option value="native:rasterlayerstatistics_1" type="QString" name="child_id"/>
+          <Option value="statistics" type="QString" name="component_description"/>
+          <Option value="573" type="double" name="component_pos_x"/>
+          <Option value="271" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="statistics" type="QString" name="name"/>
+          <Option value="OUTPUT_HTML_FILE" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BAND">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:slope_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:slope_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:slope" type="QString" name="alg_id"/>
+      <Option value="Slope" type="QString" name="component_description"/>
+      <Option value="456" type="double" name="component_pos_x"/>
+      <Option value="126" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:slope_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="Rasterlayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="Z_FACTOR">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:hypsometriccurves_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:hypsometriccurves" type="QString" name="alg_id"/>
+      <Option value="Hypsometric curves" type="QString" name="component_description"/>
+      <Option value="252" type="double" name="component_pos_x"/>
+      <Option value="281" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:hypsometriccurves_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="hypsometry tables directory">
+          <Option value="qgis:hypsometriccurves_1" type="QString" name="child_id"/>
+          <Option value="hypsometry tables directory" type="QString" name="component_description"/>
+          <Option value="368" type="double" name="component_pos_x"/>
+          <Option value="350" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="hypsometry tables directory" type="QString" name="name"/>
+          <Option value="OUTPUT_DIRECTORY" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="false" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BOUNDARY_LAYER">
+          <Option type="Map">
+            <Option value="polygonslayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_DEM">
+          <Option type="Map">
+            <Option value="gdal:cliprasterbymasklayer_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STEP">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="100" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_PERCENTAGE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="mymodels" type="QString" name="model_group"/>
+  <Option value="HypsoSlope" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="Rasterlayer">
+      <Option type="invalid" name="default"/>
+      <Option value="DTM" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="Rasterlayer" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:rasterlayerstatistics_1:statistics">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="statistics" type="QString" name="description"/>
+      <Option value="HTML files (*.html *.HTML)" type="QString" name="file_filter"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:rasterlayerstatistics_1:statistics" type="QString" name="name"/>
+      <Option value="fileDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="polygonslayer">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Polygon layer" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="polygonslayer" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="qgis:hypsometriccurves_1:hypsometry tables directory">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="hypsometry tables directory" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="qgis:hypsometriccurves_1:hypsometry tables directory" type="QString" name="name"/>
+      <Option value="folderDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="Rasterlayer">
+      <Option value="Rasterlayer" type="QString" name="component_description"/>
+      <Option value="402" type="double" name="component_pos_x"/>
+      <Option value="30" type="double" name="component_pos_y"/>
+      <Option value="Rasterlayer" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="polygonslayer">
+      <Option value="polygonslayer" type="QString" name="component_description"/>
+      <Option value="116" type="double" name="component_pos_x"/>
+      <Option value="30" type="double" name="component_pos_y"/>
+      <Option value="polygonslayer" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>
