@@ -1,0 +1,45 @@
+Legend 2012 inventory attributes
+--------------------------------
+
+p_id - Sample plot ID
+
+Hab - Habitat
+	0 - Very rich and humid soil (Lehto)
+	1 - Rich and humid soil, main species spruce, also deciduous (OMT)  
+	2 - Rich soil, pine, spruce, birch and poplar are typical (MT)
+	3 - Somehow dry soil, main species pine, also spruce (VT)
+	4 - Dry soil, main species pine (CT)
+	5 - Very poor and dry soil, mainly lichens (CIT)
+
+Devl - Development class
+	A0 = open stand
+	S0 = Seed-tree stand
+	Y1 = Seed-tree with saplings
+	T1 = Young seedlings (0-1.3 m average height)
+	T2 = Saplings (1.3 – 6 m in height or diameter 1.3 < 8 cm)
+	02 = First thinning stand
+	03 = Mature growing stand
+	04 = Mature stand, ready for harvesting
+	05 = Shelter tree stand
+	06 = Low productivity stand
+	
+Age - Age (years)
+
+BA - Basal area (m2/ha)
+
+Stem - Number of stems per ha
+
+Dg - Basimetric diameter (cm)
+
+Hg - Basimetric height (m)
+
+Vol - Volume (m3/ha)
+
+MainSp - Main species
+	1 = pine (Pinus sylvestris)
+	2 = spruce (Picea abies)
+	3 = siver birch (Betula pendula)
+	4 = hairy birch (Betula pubescens)
+	5 = poplar (Populus tremula)
+
+MainPerc - Main species percentage (%)
