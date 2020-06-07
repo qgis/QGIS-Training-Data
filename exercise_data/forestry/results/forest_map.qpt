@@ -1,0 +1,278 @@
+<Composer title="results_map" visible="1">
+ <Composition snapGridTolerance="2" gridVisible="1" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="1" numPages="1" paperHeight="297" alignmentSnapTolerance="2" smartGuides="1" printAsRaster="1" generateWorldFile="0">
+  <symbol alpha="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_unit" v="MM"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="color_border" v="0,0,0,255"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+    <prop k="style_border" v="no"/>
+    <prop k="width_border" v="0.26"/>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="32" labelText="Total area: 72.9&#xa;Total volume (m3): 13479&#xa;Average volume (m3/ha): 184.9" htmlState="0" halign="1" margin="1">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="55.1261" x="127.437" transparency="0" y="270" height="17.5534" positionMode="0" frame="true" outlineWidth="0.3" zValue="12" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{4502c8ac-565f-4116-b475-363653742575}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="32" labelText="Using Stand Sample Plots Averages" htmlState="0" halign="1" margin="1">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="70" x="120" transparency="0" y="263.308" height="7.1" positionMode="0" frame="false" outlineWidth="0.3" zValue="11" itemRotation="0" lastValidViewScaleFactor="4.90475" uuid="{23f117c8-d728-4dec-a1c8-6e213ab9dd0b}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="32" labelText="Total area: 72.9&#xa;Total volume (m3): 9856&#xa;Average volume (m3/ha): 135.2" htmlState="0" halign="1" margin="1">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="55.1261" x="22.5356" transparency="0" y="270" height="17.5534" positionMode="0" frame="true" outlineWidth="0.3" zValue="10" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{c320c0bf-e91f-42a3-8bb1-aab6df5edab0}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerScaleBar penColor="#000000" style="Single Box" numMapUnitsPerScaleBarUnit="1" alignment="0" brushColor="#000000" numSegments="2" segmentMillimeters="29.2652" fontColor="#000000" font="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" numUnitsPerSegment="250" units="1" labelBarSpace="3" outlineWidth="1" numSegmentsLeft="0" height="2" mapId="0" boxContentSpace="1" unitLabel="m">
+   <ComposerItem width="73.095" x="116.905" transparency="0" y="35.1068" height="12.8311" positionMode="0" frame="false" outlineWidth="0.3" zValue="9" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{8de8043f-4bb3-4c47-9e0b-b2388a1c8b90}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="233" blue="233" green="233"/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerLabel valign="32" labelText="Using Systematic Sample plots" htmlState="0" halign="1" margin="1">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="60.1973" x="20" transparency="0" y="263.308" height="7.1" positionMode="0" frame="false" outlineWidth="0.3" zValue="8" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{31070d44-f51e-4aa4-956b-975f9149a37f}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="32" labelText="- Results for the whole forest area -" htmlState="0" halign="1" margin="1">
+   <LabelFont description="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="86.3494" x="61.8546" transparency="0" y="254.855" height="8.63995" positionMode="0" frame="false" outlineWidth="0.3" zValue="7" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{5e57cb1a-63af-4c93-96b5-706f7ddb6c9c}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="32" labelText="- INVENTORY RESULTS 2012 -" htmlState="0" halign="4" margin="1">
+   <LabelFont description="MS Shell Dlg 2,16,-1,5,75,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="90.807" x="59.5965" transparency="0" y="17.3592" height="8.73107" positionMode="0" frame="false" outlineWidth="0.3" zValue="6" itemRotation="0" lastValidViewScaleFactor="9.8095" uuid="{a7d12deb-f0ce-4579-88d9-342883f3ed4c}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture pictureRotation="0" pictureWidth="26.6023" file="../PROGRA~2/QGISVA~1/apps/qgis/svg/arrows/Arrow_05.svg" pictureHeight="26.6023" mapId="0">
+   <ComposerItem width="26.6023" x="140" transparency="0" y="50" height="43.6699" positionMode="0" frame="false" outlineWidth="0.3" zValue="5" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{efc798eb-7d5b-4f2b-8916-e5a0eb183bcb}" id="" background="false" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLegend symbolWidth="7" title="Stand Results" boxSpace="2" splitLayer="0" equalColumnWidth="0" map="0" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+   <styles>
+    <style marginBottom="2" name="title" font="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="2" name="group" font="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="2" name="subgroup" font="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="2" name="symbol" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="2" marginLeft="2" name="symbolLabel" font="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0"/>
+   </styles>
+   <Model autoUpdate="1">
+    <LayerItem layerId="forest_stands_2012_results20140703130929405" userText="Stand Volume (m3/ha)" style="subgroup" text="Stand Volume (m3/ha)" showFeatureCount="0">
+     <VectorClassificationItemNg userText="" text="No data">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="170,85,0,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="0 - 15">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="207,236,201,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="15 - 25">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="142,208,139,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="25 - 50">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="102,189,111,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="50 - 100">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="61,166,89,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="100 - 150">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="3,111,46,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+     <VectorClassificationItemNg userText="" text="150 - 300">
+      <symbols>
+       <symbol alpha="1" type="fill" name="classificationSymbol">
+        <layer pass="0" class="SimpleFill" locked="0">
+         <prop k="border_width_unit" v="MM"/>
+         <prop k="color" v="0,68,27,255"/>
+         <prop k="color_border" v="0,0,0,255"/>
+         <prop k="offset" v="0,0"/>
+         <prop k="offset_unit" v="MM"/>
+         <prop k="style" v="solid"/>
+         <prop k="style_border" v="solid"/>
+         <prop k="width_border" v="0.26"/>
+        </layer>
+       </symbol>
+      </symbols>
+     </VectorClassificationItemNg>
+    </LayerItem>
+   </Model>
+   <ComposerItem width="45.8" x="134.291" transparency="0" y="166.98" height="61.9" positionMode="0" frame="true" outlineWidth="1.3" zValue="4" itemRotation="0" lastValidViewScaleFactor="2.45237" uuid="{05549f8d-53a2-4f83-b1d6-43200cca7ced}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="49" blue="49" green="49"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLegend>
+  <ComposerLabel valign="32" labelText="RAUTJÄRVI FOREST&#xa;" htmlState="0" halign="4" margin="1">
+   <LabelFont description="MS Shell Dlg 2,22,-1,5,75,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem width="143.029" x="33.4854" transparency="0" y="7.55339" height="12.4466" positionMode="0" frame="false" outlineWidth="0.3" zValue="3" itemRotation="0" lastValidViewScaleFactor="9.8095" uuid="{78bc7e2e-0f25-4a5c-aee2-e541bb164176}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap mapRotation="0" keepLayerSet="false" overviewFrameMap="-1" id="0" previewMode="Cache" drawCanvasItems="true">
+   <overviewFrame overviewBlendMode="0" overviewFrameMap="-1" overviewCentered="false" overviewInverted="false">
+    <symbol alpha="0.3" type="fill" name="">
+     <layer pass="0" class="SimpleFill" locked="0">
+      <prop k="border_width_unit" v="MM"/>
+      <prop k="color" v="255,0,0,255"/>
+      <prop k="color_border" v="0,0,0,255"/>
+      <prop k="offset" v="0,0"/>
+      <prop k="offset_unit" v="MM"/>
+      <prop k="style" v="solid"/>
+      <prop k="style_border" v="no"/>
+      <prop k="width_border" v="0.26"/>
+     </layer>
+    </symbol>
+   </overviewFrame>
+   <Extent ymin="6785422.99398432392627001" xmin="396827.56266852439148352" ymax="6787216.44726867508143187" xmax="398279.40580347558716312"/>
+   <LayerSet/>
+   <Grid gridStyle="0" crossLength="3" gridFramePenThickness="0.5" intervalX="500" offsetX="500" intervalY="500" offsetY="500" gridFrameStyle="1" gridFrameWidth="1" gridBlendMode="0" show="1">
+    <framePenColor alpha="255" red="0" blue="0" green="0"/>
+    <frameFillColor1 alpha="255" red="255" blue="255" green="255"/>
+    <frameFillColor2 alpha="255" red="0" blue="0" green="0"/>
+    <symbol alpha="1" type="line" name="">
+     <layer pass="0" class="SimpleLine" locked="0">
+      <prop k="capstyle" v="flat"/>
+      <prop k="color" v="0,0,0,255"/>
+      <prop k="customdash" v="5;2"/>
+      <prop k="customdash_unit" v="MM"/>
+      <prop k="draw_inside_polygon" v="0"/>
+      <prop k="joinstyle" v="bevel"/>
+      <prop k="offset" v="0"/>
+      <prop k="offset_unit" v="MM"/>
+      <prop k="penstyle" v="solid"/>
+      <prop k="use_custom_dash" v="0"/>
+      <prop k="width" v="0.3"/>
+      <prop k="width_unit" v="MM"/>
+     </layer>
+    </symbol>
+    <Annotation rightDirection="1" bottomDirection="0" format="0" topPosition="1" precision="0" leftDirection="1" rightPosition="1" bottomPosition="1" frameDistance="1" show="1" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" leftPosition="1" topDirection="0">
+     <fontColor alpha="255" red="0" blue="0" green="0"/>
+    </Annotation>
+   </Grid>
+   <AtlasMap fixedScale="0" atlasDriven="0" margin="0.10000000000000001"/>
+   <ComposerItem width="170" x="20.0293" transparency="0" y="35.1068" height="210" positionMode="0" frame="false" outlineWidth="0.3" zValue="2" itemRotation="0" lastValidViewScaleFactor="2.62733" uuid="{9a22b5aa-9c6e-4de9-b3fb-faa9f6b7fa16}" id="" background="true" blendMode="0" positionLock="false">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerShape shapeType="1" cornerRadius="0">
+   <symbol alpha="1" type="fill" name="">
+    <layer pass="0" class="SimpleFill" locked="0">
+     <prop k="border_width_unit" v="MM"/>
+     <prop k="color" v="255,255,255,255"/>
+     <prop k="color_border" v="0,0,0,255"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <prop k="style_border" v="solid"/>
+     <prop k="width_border" v="0.3"/>
+    </layer>
+   </symbol>
+   <ComposerItem width="198.583" x="5.70875" transparency="0" y="5.66455" height="287.011" positionMode="0" frame="false" outlineWidth="0.3" zValue="1" itemRotation="0" lastValidViewScaleFactor="2.62733" uuid="{fcd18ed4-c610-4e17-aab6-b3819103e8f8}" id="" background="true" blendMode="0" positionLock="true">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerShape>
+ </Composition>
+</Composer>
