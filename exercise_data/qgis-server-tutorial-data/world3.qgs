@@ -20,16 +20,16 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer providerKey="spatialite" name="airports" expanded="1" source="dbname='/home/paolo/Desktop/QGIS-Training-Data/exercise_data/qgis-server-tutorial-data/naturalearth.sqlite' table=&quot;airports&quot; (geom) sql=" id="airports20160924201425088" checked="Qt::Checked">
+    <layer-tree-layer providerKey="spatialite" name="airports" expanded="1" source="dbname='./naturalearth.sqlite' table=&quot;airports&quot; (geom) sql=" id="airports20160924201425088" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer providerKey="spatialite" name="places" expanded="1" source="dbname='/home/paolo/Desktop/QGIS-Training-Data/exercise_data/qgis-server-tutorial-data/naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" id="places20160903164057641" checked="Qt::Unchecked">
+    <layer-tree-layer providerKey="spatialite" name="places" expanded="1" source="dbname='./naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" id="places20160903164057641" checked="Qt::Unchecked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer providerKey="spatialite" name="countries" expanded="0" source="dbname='/home/paolo/Desktop/QGIS-Training-Data/exercise_data/qgis-server-tutorial-data/naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" id="countries20160903162230262" checked="Qt::Checked">
+    <layer-tree-layer providerKey="spatialite" name="countries" expanded="0" source="dbname='./naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" id="countries20160903162230262" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer providerKey="spatialite" name="countries_shapeburst" expanded="1" source="dbname='/home/paolo/Desktop/QGIS-Training-Data/exercise_data/qgis-server-tutorial-data/naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" id="countries20160910105437623" checked="Qt::Checked">
+    <layer-tree-layer providerKey="spatialite" name="countries_shapeburst" expanded="1" source="dbname='./naturalearth.sqlite' table=&quot;countries&quot; (geom) sql=" id="countries20160910105437623" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -10791,7 +10791,7 @@ def my_form_open(dialog, layer, feature):
         </styles>
         <layer-tree-group>
           <customproperties/>
-          <layer-tree-layer providerKey="spatialite" name="places" expanded="1" source="dbname='/home/paolo/Desktop/QGIS-Training-Data/exercise_data/qgis-server-tutorial-data/naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" id="places20160903164057641" checked="Qt::Unchecked">
+          <layer-tree-layer providerKey="spatialite" name="places" expanded="1" source="dbname='./naturalearth.sqlite' table=&quot;places&quot; (geom) sql=" id="places20160903164057641" checked="Qt::Unchecked">
             <customproperties/>
           </layer-tree-layer>
           <custom-order enabled="0"/>
