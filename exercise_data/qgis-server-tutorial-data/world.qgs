@@ -33,28 +33,28 @@
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
-      <item>countries20160903162230262</item>
-      <item>places20160903164057641</item>
-      <item>countries20160910105437623</item>
       <item>airports20160924201425088</item>
+      <item>places20160903164057641</item>
+      <item>countries20160903162230262</item>
+      <item>countries20160910105437623</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="0" type="1" mode="1" intersection-snapping="0" unit="2" tolerance="0">
+  <snapping-settings enabled="0" type="2" mode="1" intersection-snapping="0" unit="2" tolerance="0">
     <individual-layer-settings>
-      <layer-setting enabled="0" type="2" id="places20160903164057641" units="2" tolerance="0"/>
-      <layer-setting enabled="0" type="2" id="countries20160910105437623" units="2" tolerance="0"/>
       <layer-setting enabled="0" type="2" id="countries20160903162230262" units="2" tolerance="0"/>
-      <layer-setting enabled="1" type="1" id="airports20160924201425088" units="1" tolerance="10"/>
+      <layer-setting enabled="0" type="2" id="countries20160910105437623" units="2" tolerance="0"/>
+      <layer-setting enabled="0" type="2" id="places20160903164057641" units="2" tolerance="0"/>
+      <layer-setting enabled="1" type="2" id="airports20160924201425088" units="1" tolerance="30"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>degrees</units>
     <extent>
-      <xmin>-319.03335800170907532</xmin>
-      <ymin>-201.44278251042840111</ymin>
-      <xmax>319.03335800170907532</xmax>
-      <ymax>195.06637870183470795</ymax>
+      <xmin>-693.89103212146039823</xmin>
+      <ymin>-397.18463078948605016</ymin>
+      <xmax>693.89103212146039823</xmax>
+      <ymax>390.80822698089230016</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -232,7 +232,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -243,8 +243,8 @@
       <dataDependencies/>
       <legend type="default-vector"/>
       <expressionfields/>
-      <map-layer-style-manager current="predefinito">
-        <map-layer-style name="predefinito"/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
       <flags>
@@ -367,7 +367,33 @@
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
-                <Option name="properties"/>
+                <Option name="properties" type="Map">
+                  <Option name="Family" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="field" type="QString" value="font"/>
+                    <Option name="type" type="int" value="2"/>
+                  </Option>
+                  <Option name="PositionX" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="field" type="QString" value="label_x_1mil"/>
+                    <Option name="type" type="int" value="2"/>
+                  </Option>
+                  <Option name="PositionY" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="field" type="QString" value="label_y_1mil"/>
+                    <Option name="type" type="int" value="2"/>
+                  </Option>
+                  <Option name="Rotation" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="field" type="QString" value="rotation"/>
+                    <Option name="type" type="int" value="2"/>
+                  </Option>
+                  <Option name="Size" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="field" type="QString" value="font_size_1mil"/>
+                    <Option name="type" type="int" value="2"/>
+                  </Option>
+                </Option>
                 <Option name="type" type="QString" value="collection"/>
               </Option>
             </dd_properties>
@@ -702,6 +728,15 @@ def my_form_open(dialog, layer, feature):
         <type></type>
         <title></title>
         <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
         <links/>
         <fees></fees>
         <encoding></encoding>
@@ -715,10 +750,18 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
-        <extent/>
+        <extent>
+          <spatial maxz="0" dimensions="2" minz="0" maxx="0" maxy="0" crs="" miny="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
       </resourceMetadata>
       <provider encoding="UTF-8">spatialite</provider>
       <vectorjoins/>
@@ -729,49 +772,49 @@ def my_form_open(dialog, layer, feature):
       <map-layer-style-manager current="classified_by_name">
         <map-layer-style name="classified_by_name"/>
         <map-layer-style name="classified_by_population">
-          <qgis simplifyMaxScale="1" maxLabelScale="1e+08" scaleBasedLabelVisibilityFlag="0" maximumScale="1e+08" simplifyDrawingHints="1" minimumScale="-4.65661e-10" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" minLabelScale="0" version="2.14.6-Essen">
+          <qgis simplifyMaxScale="1" maxLabelScale="1e+08" scaleBasedLabelVisibilityFlag="0" simplifyDrawingHints="1" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minimumScale="-4.65661e-10" simplifyLocal="1" minLabelScale="0" version="2.14.6-Essen">
             <edittypes>
               <edittype widgetv2type="TextEdit" name="id">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="fips">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="iso2">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="iso3">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="un">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="name">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="area">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="pop2005">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="region">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="subregion">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="lon">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="lat">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="pop_est">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
             </edittypes>
-            <renderer-v2 attr="pop_est" graduatedMethod="GraduatedColor" forceraster="0" type="graduatedSymbol" enableorderby="0" symbollevels="0">
+            <renderer-v2 attr="pop_est" graduatedMethod="GraduatedColor" type="graduatedSymbol" forceraster="0" enableorderby="0" symbollevels="0">
               <ranges>
                 <range symbol="0" upper="7850.000000000000000" label=" -99 - 7850 " render="true" lower="-99.000000000000000"/>
                 <range symbol="1" upper="69453.200000000011642" label=" 7850 - 69453 " render="true" lower="7850.000000000000000"/>
@@ -1223,7 +1266,7 @@ def my_form_open(dialog, layer, feature):
                 <attribute field="" label="" color="#000000"/>
               </DiagramCategory>
             </SingleCategoryDiagramRenderer>
-            <DiagramLayerSettings placement="0" xPosColumn="-1" dist="0" priority="0" linePlacementFlags="10" showAll="1" obstacle="0" yPosColumn="-1" zIndex="0"/>
+            <DiagramLayerSettings xPosColumn="-1" placement="0" priority="0" dist="0" linePlacementFlags="10" showAll="1" obstacle="0" yPosColumn="-1" zIndex="0"/>
             <annotationform>../QGISTrainingMaterials</annotationform>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -7161,8 +7204,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -7173,7 +7217,7 @@ def my_form_open(dialog, layer, feature):
           <attribute field="" label="" color="#000000"/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" linePlacementFlags="10" showAll="1" obstacle="0" zIndex="0">
+      <DiagramLayerSettings placement="0" priority="0" dist="0" linePlacementFlags="2" showAll="1" obstacle="0" zIndex="0">
         <properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -7344,12 +7388,12 @@ def my_form_open(dialog, layer, feature):
         <attribute>iso3</attribute>
         <attribute>subregion</attribute>
         <attribute>fips</attribute>
-        <attribute>lat</attribute>
-        <attribute>pop2005</attribute>
         <attribute>area</attribute>
+        <attribute>pop2005</attribute>
+        <attribute>lat</attribute>
         <attribute>region</attribute>
-        <attribute>iso2</attribute>
         <attribute>lon</attribute>
+        <attribute>iso2</attribute>
         <attribute>pop_est</attribute>
         <attribute>un</attribute>
       </excludeAttributesWFS>
@@ -7399,9 +7443,26 @@ def my_form_open(dialog, layer, feature):
         <constraint field="pop_est" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column hidden="0" name="id" type="field" width="-1"/>
+          <column hidden="0" name="fips" type="field" width="-1"/>
+          <column hidden="0" name="iso2" type="field" width="-1"/>
+          <column hidden="0" name="iso3" type="field" width="-1"/>
+          <column hidden="0" name="un" type="field" width="-1"/>
+          <column hidden="0" name="name" type="field" width="-1"/>
+          <column hidden="0" name="area" type="field" width="-1"/>
+          <column hidden="0" name="pop2005" type="field" width="-1"/>
+          <column hidden="0" name="region" type="field" width="-1"/>
+          <column hidden="0" name="subregion" type="field" width="-1"/>
+          <column hidden="0" name="lon" type="field" width="-1"/>
+          <column hidden="0" name="lat" type="field" width="-1"/>
+          <column hidden="0" name="pop_est" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
       </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
@@ -7431,8 +7492,36 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
+      <editable>
+        <field name="area" editable="1"/>
+        <field name="fips" editable="1"/>
+        <field name="id" editable="1"/>
+        <field name="iso2" editable="1"/>
+        <field name="iso3" editable="1"/>
+        <field name="lat" editable="1"/>
+        <field name="lon" editable="1"/>
+        <field name="name" editable="1"/>
+        <field name="pop2005" editable="1"/>
+        <field name="pop_est" editable="1"/>
+        <field name="region" editable="1"/>
+        <field name="subregion" editable="1"/>
+        <field name="un" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="area" labelOnTop="0"/>
+        <field name="fips" labelOnTop="0"/>
+        <field name="id" labelOnTop="0"/>
+        <field name="iso2" labelOnTop="0"/>
+        <field name="iso3" labelOnTop="0"/>
+        <field name="lat" labelOnTop="0"/>
+        <field name="lon" labelOnTop="0"/>
+        <field name="name" labelOnTop="0"/>
+        <field name="pop2005" labelOnTop="0"/>
+        <field name="pop_est" labelOnTop="0"/>
+        <field name="region" labelOnTop="0"/>
+        <field name="subregion" labelOnTop="0"/>
+        <field name="un" labelOnTop="0"/>
+      </labelOnTop>
       <widgets>
         <widget name="countries_area">
           <config/>
@@ -7474,7 +7563,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyDrawingHints="1" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="2.5e+08" labelsEnabled="1" type="vector" simplifyAlgorithm="0" wkbType="MultiPolygon" simplifyMaxScale="1" refreshOnNotifyMessage="" maxScale="1" readOnly="0" geometry="Polygon" hasScaleBasedVisibilityFlag="1">
+    <maplayer simplifyDrawingHints="1" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="2.5e+08" labelsEnabled="0" type="vector" simplifyAlgorithm="0" wkbType="MultiPolygon" simplifyMaxScale="1" refreshOnNotifyMessage="" maxScale="1" readOnly="0" geometry="Polygon" hasScaleBasedVisibilityFlag="1">
       <extent>
         <xmin>-179.99999999999997158</xmin>
         <ymin>-90</ymin>
@@ -7507,6 +7596,15 @@ def my_form_open(dialog, layer, feature):
         <type></type>
         <title></title>
         <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
         <links/>
         <fees></fees>
         <encoding></encoding>
@@ -7520,10 +7618,18 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
-        <extent/>
+        <extent>
+          <spatial maxz="0" dimensions="2" minz="0" maxx="0" maxy="0" crs="" miny="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
       </resourceMetadata>
       <provider encoding="UTF-8">spatialite</provider>
       <vectorjoins/>
@@ -7533,51 +7639,383 @@ def my_form_open(dialog, layer, feature):
       <expressionfields/>
       <map-layer-style-manager current="blue">
         <map-layer-style name="blue"/>
+        <map-layer-style name="default">
+          <qgis simplifyMaxScale="1" simplifyDrawingHints="1" labelsEnabled="1" readOnly="0" maxScale="1" minScale="2.5e+8" hasScaleBasedVisibilityFlag="1" simplifyDrawingTol="1" simplifyLocal="1" version="2.99.0-Master" simplifyAlgorithm="0">
+            <renderer-v2 preprocessing="0" type="invertedPolygonRenderer" forceraster="0" enableorderby="0">
+              <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
+                <symbols>
+                  <symbol name="0" type="fill" alpha="1" clip_to_extent="1">
+                    <layer pass="0" enabled="1" locked="0" class="ShapeburstFill">
+                      <prop k="blur_radius" v="10"/>
+                      <prop k="color" v="43,106,219,255"/>
+                      <prop k="color1" v="0,0,255,255"/>
+                      <prop k="color2" v="0,255,0,255"/>
+                      <prop k="color_type" v="0"/>
+                      <prop k="discrete" v="0"/>
+                      <prop k="distance_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                      <prop k="distance_unit" v="MM"/>
+                      <prop k="gradient_color2" v="106,148,219,255"/>
+                      <prop k="ignore_rings" v="0"/>
+                      <prop k="max_distance" v="5"/>
+                      <prop k="offset" v="0,0"/>
+                      <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                      <prop k="offset_unit" v="MM"/>
+                      <prop k="rampType" v="gradient"/>
+                      <prop k="use_whole_shape" v="0"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option name="name" type="QString" value=""/>
+                          <Option name="properties"/>
+                          <Option name="type" type="QString" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+                      <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                      <prop k="color" v="0,0,255,255"/>
+                      <prop k="joinstyle" v="bevel"/>
+                      <prop k="offset" v="0,0"/>
+                      <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                      <prop k="offset_unit" v="MM"/>
+                      <prop k="outline_color" v="0,0,0,255"/>
+                      <prop k="outline_style" v="solid"/>
+                      <prop k="outline_width" v="1"/>
+                      <prop k="outline_width_unit" v="MM"/>
+                      <prop k="style" v="no"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option name="name" type="QString" value=""/>
+                          <Option name="properties" type="Map">
+                            <Option name="outlineStyle" type="Map">
+                              <Option name="active" type="bool" value="false"/>
+                              <Option name="expression" type="QString" value="if( $scale &lt; 4656581, 1.0, 0)"/>
+                              <Option name="type" type="int" value="3"/>
+                            </Option>
+                            <Option name="outlineWidth" type="Map">
+                              <Option name="active" type="bool" value="true"/>
+                              <Option name="expression" type="QString" value="if( $scale &lt; 4656581, 1.0, 0)"/>
+                              <Option name="type" type="int" value="3"/>
+                            </Option>
+                          </Option>
+                          <Option name="type" type="QString" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+            </renderer-v2>
+            <customproperties>
+              <property key="variableNames" value="_fields_"/>
+              <property key="variableValues" value=""/>
+            </customproperties>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerOpacity>1</layerOpacity>
+            <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Pie">
+              <DiagramCategory opacity="1" scaleDependency="Area" sizeType="MM" diagramOrientation="Up" height="15" penAlpha="255" enabled="0" lineSizeType="MM" labelPlacementMethod="XHeight" backgroundColor="#ffffff" penColor="#000000" barWidth="5" scaleBasedVisibility="0" maxScaleDenominator="1e+8" minScaleDenominator="100000" backgroundAlpha="255" penWidth="0" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" width="15">
+                <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+                <attribute field="" label="" color="#000000"/>
+              </DiagramCategory>
+            </SingleCategoryDiagramRenderer>
+            <DiagramLayerSettings placement="0" priority="0" dist="0" linePlacementFlags="10" showAll="1" obstacle="0" zIndex="0">
+              <properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties" type="Map">
+                    <Option name="show" type="Map">
+                      <Option name="active" type="bool" value="true"/>
+                      <Option name="field" type="QString" value="id"/>
+                      <Option name="type" type="int" value="2"/>
+                    </Option>
+                  </Option>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </properties>
+            </DiagramLayerSettings>
+            <fieldConfiguration>
+              <field name="id">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="fips">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="iso2">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="iso3">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="un">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="name">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="area">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="pop2005">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="region">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="subregion">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="lon">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="lat">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+              <field name="pop_est">
+                <editWidget type="TextEdit">
+                  <config>
+                    <Option type="Map">
+                      <Option name="IsMultiline" type="QString" value="0"/>
+                      <Option name="UseHtml" type="QString" value="0"/>
+                    </Option>
+                  </config>
+                </editWidget>
+              </field>
+            </fieldConfiguration>
+            <aliases>
+              <alias index="0" field="id" name=""/>
+              <alias index="1" field="fips" name=""/>
+              <alias index="2" field="iso2" name=""/>
+              <alias index="3" field="iso3" name=""/>
+              <alias index="4" field="un" name=""/>
+              <alias index="5" field="name" name=""/>
+              <alias index="6" field="area" name=""/>
+              <alias index="7" field="pop2005" name=""/>
+              <alias index="8" field="region" name=""/>
+              <alias index="9" field="subregion" name=""/>
+              <alias index="10" field="lon" name=""/>
+              <alias index="11" field="lat" name=""/>
+              <alias index="12" field="pop_est" name=""/>
+            </aliases>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <defaults>
+              <default field="id" applyOnUpdate="0" expression=""/>
+              <default field="fips" applyOnUpdate="0" expression=""/>
+              <default field="iso2" applyOnUpdate="0" expression=""/>
+              <default field="iso3" applyOnUpdate="0" expression=""/>
+              <default field="un" applyOnUpdate="0" expression=""/>
+              <default field="name" applyOnUpdate="0" expression=""/>
+              <default field="area" applyOnUpdate="0" expression=""/>
+              <default field="pop2005" applyOnUpdate="0" expression=""/>
+              <default field="region" applyOnUpdate="0" expression=""/>
+              <default field="subregion" applyOnUpdate="0" expression=""/>
+              <default field="lon" applyOnUpdate="0" expression=""/>
+              <default field="lat" applyOnUpdate="0" expression=""/>
+              <default field="pop_est" applyOnUpdate="0" expression=""/>
+            </defaults>
+            <constraints>
+              <constraint field="id" constraints="3" unique_strength="1" notnull_strength="1" exp_strength="0"/>
+              <constraint field="fips" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="iso2" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="iso3" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="un" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="name" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="area" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="pop2005" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="region" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="subregion" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="lon" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="lat" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+              <constraint field="pop_est" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+            </constraints>
+            <constraintExpressions>
+              <constraint field="id" desc="" exp=""/>
+              <constraint field="fips" desc="" exp=""/>
+              <constraint field="iso2" desc="" exp=""/>
+              <constraint field="iso3" desc="" exp=""/>
+              <constraint field="un" desc="" exp=""/>
+              <constraint field="name" desc="" exp=""/>
+              <constraint field="area" desc="" exp=""/>
+              <constraint field="pop2005" desc="" exp=""/>
+              <constraint field="region" desc="" exp=""/>
+              <constraint field="subregion" desc="" exp=""/>
+              <constraint field="lon" desc="" exp=""/>
+              <constraint field="lat" desc="" exp=""/>
+              <constraint field="pop_est" desc="" exp=""/>
+            </constraintExpressions>
+            <attributeactions>
+              <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+            </attributeactions>
+            <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+              <columns/>
+            </attributetableconfig>
+            <editform>/QGISTrainingMaterials</editform>
+            <editforminit/>
+            <editforminitcodesource>0</editforminitcodesource>
+            <editforminitfilepath>/QGISTrainingMaterials</editforminitfilepath>
+            <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from PyQt4.QtGui import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+            <featformsuppress>0</featformsuppress>
+            <editorlayout>generatedlayout</editorlayout>
+            <editable/>
+            <labelOnTop/>
+            <widgets/>
+            <conditionalstyles>
+              <rowstyles/>
+              <fieldstyles/>
+            </conditionalstyles>
+            <expressionfields/>
+            <previewExpression>"name"</previewExpression>
+            <mapTip/>
+            <layerGeometryType>2</layerGeometryType>
+          </qgis>
+        </map-layer-style>
         <map-layer-style name="green">
-          <qgis simplifyMaxScale="1" maxLabelScale="1e+08" scaleBasedLabelVisibilityFlag="0" maximumScale="1e+08" simplifyDrawingHints="1" minimumScale="100000" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" minLabelScale="0" version="2.14.6-Essen">
+          <qgis simplifyMaxScale="1" maxLabelScale="1e+08" scaleBasedLabelVisibilityFlag="0" simplifyDrawingHints="1" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minimumScale="100000" simplifyLocal="1" minLabelScale="0" version="2.14.6-Essen">
             <edittypes>
               <edittype widgetv2type="TextEdit" name="id">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="fips">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="iso2">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="iso3">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="un">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="name">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="area">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="pop2005">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="region">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="subregion">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="lon">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="lat">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="pop_est">
-                <widgetv2config IsMultiline="0" labelOnTop="0" fieldEditable="1" UseHtml="0"/>
+                <widgetv2config IsMultiline="0" labelOnTop="0" UseHtml="0" fieldEditable="1"/>
               </edittype>
             </edittypes>
-            <renderer-v2 preprocessing="0" forceraster="0" type="invertedPolygonRenderer" enableorderby="0">
-              <renderer-v2 forceraster="0" type="singleSymbol" enableorderby="0" symbollevels="0">
+            <renderer-v2 preprocessing="0" type="invertedPolygonRenderer" forceraster="0" enableorderby="0">
+              <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
                 <symbols>
                   <symbol name="0" type="fill" alpha="1" clip_to_extent="1">
                     <layer pass="0" locked="0" class="ShapeburstFill">
@@ -7798,7 +8236,7 @@ def my_form_open(dialog, layer, feature):
                 <attribute field="" label="" color="#000000"/>
               </DiagramCategory>
             </SingleCategoryDiagramRenderer>
-            <DiagramLayerSettings placement="0" xPosColumn="-1" dist="0" priority="0" linePlacementFlags="10" showAll="1" obstacle="0" yPosColumn="-1" zIndex="0"/>
+            <DiagramLayerSettings xPosColumn="-1" placement="0" priority="0" dist="0" linePlacementFlags="10" showAll="1" obstacle="0" yPosColumn="-1" zIndex="0"/>
             <annotationform>/QGISTrainingMaterials</annotationform>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -7887,13 +8325,13 @@ def my_form_open(dialog, layer, feature):
                     <Option name="name" type="QString" value=""/>
                     <Option name="properties" type="Map">
                       <Option name="outlineStyle" type="Map">
-                        <Option name="active" type="bool" value="false"/>
-                        <Option name="expression" type="QString" value="if( $scale &lt; 4656581, 1.0, 0)"/>
+                        <Option name="active" type="bool" value="true"/>
+                        <Option name="expression" type="QString" value="if( @map_scale &lt; 4656581, 1.0, 0)"/>
                         <Option name="type" type="int" value="3"/>
                       </Option>
                       <Option name="outlineWidth" type="Map">
                         <Option name="active" type="bool" value="true"/>
-                        <Option name="expression" type="QString" value="if( $scale &lt; 4656581, 1.0, 0)"/>
+                        <Option name="expression" type="QString" value="if( @map_scale &lt; 4656581, 1.0, 0)"/>
                         <Option name="type" type="int" value="3"/>
                       </Option>
                     </Option>
@@ -7908,8 +8346,9 @@ def my_form_open(dialog, layer, feature):
         </renderer-v2>
       </renderer-v2>
       <customproperties>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -7920,7 +8359,7 @@ def my_form_open(dialog, layer, feature):
           <attribute field="" label="" color="#000000"/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" linePlacementFlags="10" showAll="1" obstacle="0" zIndex="0">
+      <DiagramLayerSettings placement="0" priority="0" dist="0" linePlacementFlags="2" showAll="1" obstacle="0" zIndex="0">
         <properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -8134,9 +8573,26 @@ def my_form_open(dialog, layer, feature):
         <constraint field="pop_est" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column hidden="0" name="id" type="field" width="-1"/>
+          <column hidden="0" name="fips" type="field" width="-1"/>
+          <column hidden="0" name="iso2" type="field" width="-1"/>
+          <column hidden="0" name="iso3" type="field" width="-1"/>
+          <column hidden="0" name="un" type="field" width="-1"/>
+          <column hidden="0" name="name" type="field" width="-1"/>
+          <column hidden="0" name="area" type="field" width="-1"/>
+          <column hidden="0" name="pop2005" type="field" width="-1"/>
+          <column hidden="0" name="region" type="field" width="-1"/>
+          <column hidden="0" name="subregion" type="field" width="-1"/>
+          <column hidden="0" name="lon" type="field" width="-1"/>
+          <column hidden="0" name="lat" type="field" width="-1"/>
+          <column hidden="0" name="pop_est" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
       </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
@@ -8166,10 +8622,38 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
+      <editable>
+        <field name="area" editable="1"/>
+        <field name="fips" editable="1"/>
+        <field name="id" editable="1"/>
+        <field name="iso2" editable="1"/>
+        <field name="iso3" editable="1"/>
+        <field name="lat" editable="1"/>
+        <field name="lon" editable="1"/>
+        <field name="name" editable="1"/>
+        <field name="pop2005" editable="1"/>
+        <field name="pop_est" editable="1"/>
+        <field name="region" editable="1"/>
+        <field name="subregion" editable="1"/>
+        <field name="un" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="area" labelOnTop="0"/>
+        <field name="fips" labelOnTop="0"/>
+        <field name="id" labelOnTop="0"/>
+        <field name="iso2" labelOnTop="0"/>
+        <field name="iso3" labelOnTop="0"/>
+        <field name="lat" labelOnTop="0"/>
+        <field name="lon" labelOnTop="0"/>
+        <field name="name" labelOnTop="0"/>
+        <field name="pop2005" labelOnTop="0"/>
+        <field name="pop_est" labelOnTop="0"/>
+        <field name="region" labelOnTop="0"/>
+        <field name="subregion" labelOnTop="0"/>
+        <field name="un" labelOnTop="0"/>
+      </labelOnTop>
       <widgets/>
-      <previewExpression>"name"</previewExpression>
+      <previewExpression>name</previewExpression>
       <mapTip></mapTip>
     </maplayer>
     <maplayer simplifyDrawingHints="0" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="4e+07" labelsEnabled="1" type="vector" simplifyAlgorithm="0" wkbType="Point" simplifyMaxScale="1" refreshOnNotifyMessage="" maxScale="1" readOnly="0" geometry="Point" hasScaleBasedVisibilityFlag="0">
@@ -8218,7 +8702,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -8229,8 +8713,8 @@ def my_form_open(dialog, layer, feature):
       <dataDependencies/>
       <legend type="default-vector"/>
       <expressionfields/>
-      <map-layer-style-manager current="predefinito">
-        <map-layer-style name="predefinito"/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
       <flags>
@@ -8319,14 +8803,25 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple">
         <settings calloutType="simple">
-          <text-style fontFamily="Cantarell" fontItalic="1" textOrientation="horizontal" namedStyle="Oblique" fontKerning="1" isExpression="0" fontWeight="50" fontStrikeout="0" textColor="0,0,0,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" fieldName="name" useSubstitutions="0" fontUnderline="0" fontSize="12" fontLetterSpacing="0" blendMode="0" fontSizeUnit="Point" fontCapitals="0" textOpacity="1" previewBkgrdColor="255,255,255,255" fontWordSpacing="0">
+          <text-style fontFamily="Sans Serif" fontItalic="1" textOrientation="horizontal" namedStyle="Oblique" fontKerning="1" isExpression="0" fontWeight="50" fontStrikeout="0" textColor="0,0,0,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" fieldName="name" useSubstitutions="0" fontUnderline="0" fontSize="12" fontLetterSpacing="0" blendMode="0" fontSizeUnit="Point" fontCapitals="0" textOpacity="1" previewBkgrdColor="255,255,255,255" fontWordSpacing="0">
             <text-buffer bufferOpacity="1" bufferJoinStyle="64" bufferNoFill="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferSize="1" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferDraw="1"/>
             <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidth="0" shapeRadiiX="4" shapeBorderWidthUnit="MM" shapeRotation="0" shapeOffsetX="0" shapeSizeUnit="MM" shapeOffsetUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeOffsetY="0" shapeOpacity="0.25" shapeBorderColor="128,128,128,255" shapeDraw="1" shapeSizeX="2" shapeType="0" shapeSizeType="0" shapeRadiiY="4" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSizeY="2" shapeRadiiUnit="MM" shapeBlendMode="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0"/>
             <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowOffsetUnit="MM" shadowColor="0,0,0,255" shadowDraw="0" shadowRadiusUnit="MM" shadowRadius="1.5" shadowScale="100" shadowBlendMode="6" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowUnder="0" shadowOpacity="0.7"/>
             <dd_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
-                <Option name="properties"/>
+                <Option name="properties" type="Map">
+                  <Option name="Rotation" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="expression" type="QString" value="75"/>
+                    <Option name="type" type="int" value="3"/>
+                  </Option>
+                  <Option name="Show" type="Map">
+                    <Option name="active" type="bool" value="false"/>
+                    <Option name="expression" type="QString" value="CASE WHEN @focus_country = '' OR intersects( &#xa;&#x9;geometry(get_feature(&#xa;&#x9;&#x9;'Focus Country', &#xa;&#x9;&#x9;'name', &#xa;&#x9;&#x9; @focus_country )),&#xa;&#x9;$geometry)&#xa;&#x9;THEN 1&#xa;ELSE&#xa;    0&#xa;END"/>
+                    <Option name="type" type="int" value="3"/>
+                  </Option>
+                </Option>
                 <Option name="type" type="QString" value="collection"/>
               </Option>
             </dd_properties>
@@ -9761,10 +10256,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
   </projectlayers>
   <layerorder>
-    <layer id="countries20160903162230262"/>
-    <layer id="places20160903164057641"/>
-    <layer id="countries20160910105437623"/>
     <layer id="airports20160924201425088"/>
+    <layer id="places20160903164057641"/>
+    <layer id="countries20160903162230262"/>
+    <layer id="countries20160910105437623"/>
   </layerorder>
   <properties>
     <DefaultStyles>
@@ -9955,7 +10450,7 @@ def my_form_open(dialog, layer, feature):
             </data_defined_properties>
           </layer>
         </symbol>
-        <LayoutItem frame="false" opacity="1" position="0,0,mm" zValue="0" frameJoinStyle="miter" excludeFromExports="0" groupUuid="" background="true" type="65638" positionOnPage="0,0,mm" uuid="{4767aeae-c7b0-4d16-8028-57fb6b2efc44}" visibility="1" id="" positionLock="false" outlineWidthM="0.3,mm" referencePoint="0" size="297,210,mm" templateUuid="{4767aeae-c7b0-4d16-8028-57fb6b2efc44}" blendMode="0" itemRotation="0">
+        <LayoutItem frame="false" opacity="1" position="0,0,mm" zValue="0" frameJoinStyle="miter" excludeFromExports="0" groupUuid="" background="true" type="65638" positionOnPage="0,0,mm" uuid="{bb5a92d5-1682-4c17-9488-99211ca9b8e7}" visibility="1" id="" positionLock="false" outlineWidthM="0.3,mm" referencePoint="0" size="297,210,mm" templateUuid="{bb5a92d5-1682-4c17-9488-99211ca9b8e7}" blendMode="0" itemRotation="0">
           <FrameColor green="0" alpha="255" blue="0" red="0"/>
           <BackgroundColor green="255" alpha="255" blue="255" red="255"/>
           <LayoutObject>
@@ -9976,7 +10471,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_color" v="35,35,35,255"/>
               <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -10001,7 +10496,7 @@ def my_form_open(dialog, layer, feature):
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
               <Option name="properties" type="Map">
-                <Option name="dataDefinedMapLabelMargin" type="Map">
+                <Option name="dataDefinedSource" type="Map">
                   <Option name="active" type="bool" value="false"/>
                   <Option name="expression" type="QString" value=""/>
                   <Option name="type" type="int" value="3"/>
@@ -10021,7 +10516,7 @@ def my_form_open(dialog, layer, feature):
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
               <Option name="properties" type="Map">
-                <Option name="dataDefinedMapLabelMargin" type="Map">
+                <Option name="dataDefinedSource" type="Map">
                   <Option name="active" type="bool" value="false"/>
                   <Option name="expression" type="QString" value=""/>
                   <Option name="type" type="int" value="3"/>
@@ -10542,7 +11037,7 @@ def my_form_open(dialog, layer, feature):
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
               <Option name="properties" type="Map">
-                <Option name="dataDefinedMapLabelMargin" type="Map">
+                <Option name="dataDefinedSource" type="Map">
                   <Option name="active" type="bool" value="false"/>
                   <Option name="expression" type="QString" value=""/>
                   <Option name="type" type="int" value="3"/>
@@ -10562,7 +11057,7 @@ def my_form_open(dialog, layer, feature):
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
               <Option name="properties" type="Map">
-                <Option name="dataDefinedMapLabelMargin" type="Map">
+                <Option name="dataDefinedSource" type="Map">
                   <Option name="active" type="bool" value="false"/>
                   <Option name="expression" type="QString" value=""/>
                   <Option name="type" type="int" value="3"/>
